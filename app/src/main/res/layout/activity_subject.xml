@@ -11,19 +11,6 @@
     tools:context=".SubjectActivity">
 
     <Button
-        android:id="@+id/button_listen"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/mathIcon"
-        android:text="Math"
-        />
-    <Button
         android:id="@+id/math_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -67,6 +54,7 @@
         android:layout_marginBottom="10dp"
         android:drawableTop="@drawable/scienceIcon"
         android:text="Science"
+        />
     <Button
         android:id="@+id/geography_button"
         android:layout_width="0dp"
@@ -80,6 +68,6 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:drawableTop="@drawable/geographyIcon"
-        android:text="Science"
+        android:text="Geography"
         />
 </GridLayout>
