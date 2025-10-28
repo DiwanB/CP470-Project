@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LEARNERS"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:textSize = "70sp"
         android:textStyle = "bold"
@@ -33,7 +34,7 @@
         android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="username"
+        android:hint="user@email.com"
         android:inputType="textEmailAddress"
         android:autofillHints="emailAddress"
         />
