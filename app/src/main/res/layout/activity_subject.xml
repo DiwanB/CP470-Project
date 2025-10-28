@@ -10,20 +10,7 @@
     android:columnCount = "3"
     tools:context=".SubjectActivity">
 
-    <Button
-        android:id="@+id/button_listen"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/math_icon"
-        android:text="Math"
-        />
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/math_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -33,12 +20,22 @@
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/math_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60sp"
+
+
         android:text="Math"
-        />
-    <Button
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        app:icon="@drawable/math_icon"
+        app:iconTint="@null"
+        app:iconGravity="textTop"
+        app:iconSize="100dp" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/english_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -48,12 +45,21 @@
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/english_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60sp"
+
+
         android:text="English"
-        />
-    <Button
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        app:icon="@drawable/english_icon"
+        app:iconTint="@null"
+        app:iconGravity="textTop"
+        app:iconSize="100dp" />
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/science_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -63,12 +69,21 @@
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/science_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60sp"
+
+
         android:text="Science"
-        />
-    <Button
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        app:icon="@drawable/science_icon"
+        app:iconTint="@null"
+        app:iconGravity="textTop"
+        app:iconSize="100dp" />
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/geography_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -78,9 +93,18 @@
         android:layout_columnWeight="1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/geography_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60sp"
+
+
         android:text="Geography"
-        />
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        app:icon="@drawable/geography_icon"
+        app:iconTint="@null"
+        app:iconGravity="textTop"
+        app:iconSize="100dp" />
 </GridLayout>

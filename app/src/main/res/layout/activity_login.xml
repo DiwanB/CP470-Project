@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:padding = "12dp"
     android:orientation="vertical"
+    android:background="@color/blizzardBlue"
     tools:context=".LoginActivity">
 
     <!-- Login -->
