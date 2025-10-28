@@ -20,7 +20,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/mathIcon"
+        android:drawableTop="@drawable/math_icon"
         android:text="Math"
         />
     <Button
@@ -35,7 +35,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/mathIcon"
+        android:drawableTop="@drawable/math_icon"
         android:text="Math"
         />
     <Button
@@ -50,7 +50,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/englishIcon"
+        android:drawableTop="@drawable/english_icon"
         android:text="English"
         />
     <Button
@@ -65,8 +65,9 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/scienceIcon"
+        android:drawableTop="@drawable/science_icon"
         android:text="Science"
+        />
     <Button
         android:id="@+id/geography_button"
         android:layout_width="0dp"
@@ -79,7 +80,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableTop="@drawable/geographyIcon"
-        android:text="Science"
+        android:drawableTop="@drawable/geography_icon"
+        android:text="Geography"
         />
 </GridLayout>

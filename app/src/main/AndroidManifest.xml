@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP470Project">
         <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".SubjectActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
