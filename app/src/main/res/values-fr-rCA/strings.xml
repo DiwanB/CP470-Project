@@ -1,16 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CP470-Project</string>
-    <string name="math">Maths</string>
-    <string name="english">Anglais</string>
-    <string name="science">Sciences</string>
-    <string name="geography">Géographie</string>
     <string name="about">À propos</string>
-    <string name="LoginHint" />
+
+    <string name="activityLoginTextTitle">LEARNERS</string>
+    <string name="activityLoginTextLogin">Nom d\'utilisateur</string>
+    <string name="activityLoginTextHint">nom@email.com</string>
+    <string name="activityLoginTextPassword">Mot de passe</string>
+    <string name="activityLoginTextLoginButton">Entrer</string>
+    <string name="activityEnglishTextTitle">Anglais</string>
+    <string name="activityEnglishTextButton1">Leçon 1</string>
+    <string name="activityEnglishTextbox1">L1 description</string>
+    <string name="activityEnglishTextButton2">Leçon 2</string>
+    <string name="activityEnglishTextbox2">description for Lesson 2</string>
+    <string name="activityEnglishTextButton3">Leçon 3</string>
+    <string name="activityEnglishTextbox3">Description for Lesson 3</string>
+    <string name="activityEnglishTextButtonQuiz1">Quiz 1</string>
+    <string name="activityEnglishTextboxQuiz1">Quiz 1 cover etc etc</string>
+    <string name="activityEnglishTextButton4">Leçon 4</string>
+    <string name="activityEnglishTextbox4">l4 desc</string>
+    <string name="activityEnglishTextButton5">Leçon 5</string>
+    <string name="activityEnglishTextbox5">l5 desc</string>
+    <string name="activityEnglishTextButton6">Leçon 6</string>
+    <string name="activityEnglishTextbox6">L6 description</string>
+    <string name="activityEnglishTextButtonQuiz2">Quiz 2</string>
+
+    <string name="activityEnglishTextboxQuiz2">Testez vos connaissances sur les leçons 4 à 6!</string>
+    <string name="activityGeographyTextTitle">Géographie</string>
+    <string name="activityGeographyTextButton1">Leçon 1</string>
+    <string name="activityGeographyTextbox1">Équation de base</string>
+    <string name="activityGeographyTextButton2">Leçon 2</string>
+    <string name="activityGeographyTextbox2">description pour Lesson 2</string>
+    <string name="activityGeographyTextButton3">Leçon 3</string>
+    <string name="activityGeographyTextbox3">Description for Lesson 3</string>
+    <string name="activityGeographyTextButtonQuiz1">Quiz 1</string>
+    <string name="activityGeographyTextboxQuiz1">Quiz 1 cover etc etc</string>
+    <string name="activityGeographyTextButton4">Leçon 4</string>
+    <string name="activityGeographyTextbox4">l4 desc</string>
+    <string name="activityGeographyTextButton5">Leçon 5</string>
+    <string name="activityGeographyTextbox5">l5 desc</string>
+    <string name="activityGeographyTextButton6">Leçon 6</string>
+    <string name="activityGeographyTextbox6">L6 description</string>
+    <string name="activityGeographyTextButtonQuiz2">Quiz 2</string>
+    <string name="activityGeographyTextboxQuiz2">Testez vos connaissances sur les leçons 4 à 6!</string>
+    <string name="activityLessonTextTitle">Leçon Nom</string>
+    <string name="activityMathTextTitle">Maths</string>
+    <string name="activityMathTextButton1">Leçon 1</string>
+    <string name="activityMathTextbox1">Basic Equations</string>
+    <string name="activityMathTextButton2">Leçon 2</string>
+    <string name="activityMathTextbox2">Description for Lesson 2</string>
+    <string name="activityMathTextButton3">Leçon 3</string>
+    <string name="activityMathTextbox3">Description for Lesson 3</string>
+    <string name="activityMathTextButtonQuiz1">Quiz 1</string>
+    <string name="activityMathTextboxQuiz1">Quiz 1 cover etc etc</string>
+    <string name="activityMathTextButton4">Leçon 4</string>
+    <string name="activityMathTextbox4">l4 desc</string>
+    <string name="activityMathTextButton5">Leçon 5</string>
+    <string name="activityMathTextbox5">l5 desc</string>
+    <string name="activityMathTextButton6">Leçon 6</string>
+    <string name="activityMathTextbox6">L6 description</string>
+    <string name="activityMathTextButtonQuiz2">Quiz 2</string>
+    <string name="activityMathTextboxQuiz2">Testez vos connaissances sur les leçons 4 à 6!</string>
+    <string name="activityScienceTextTitle">Sciences</string>
+    <string name="activityScienceTextButton1">Leçon 1</string>
+    <string name="activityScienceTextbox1">Sciences fondamentales</string>
+    <string name="activityScienceTextButton2">Leçon 2</string>
+    <string name="activityScienceTextbox2">description for Lesson 2</string>
+    <string name="activityScienceTextButton3">Leçon 3</string>
+    <string name="activityScienceTextbox3">Description for Lesson 3</string>
+    <string name="activityScienceTextButtonQuiz1">Quiz 1</string>
+    <string name="activityScienceTextboxQuiz1">Quiz 1 cover etc etc</string>
+    <string name="activityScienceTextButton4">Leçon 4</string>
+    <string name="activityScienceTextbox4">l4 desc</string>
+    <string name="activityScienceTextButton5">Leçon 5</string>
+    <string name="activityScienceTextbox5">l5 desc</string>
+    <string name="activityScienceTextButton6">Leçon 6</string>
+    <string name="activityScienceTextbox6">L6 description</string>
+    <string name="activityScienceTextButtonQuiz2">Quiz 2</string>
+    <string name="activityScienceTextboxQuiz2">Testez vos connaissances sur les leçons 4 à 6!</string>
+    <string name="activitySubjectTextMath">Maths</string>
+    <string name="activitySubjectTextEnglish">Anglais</string>
+    <string name="activitySubjectTextScience">Sciences</string>
+    <string name="activitySubjectTextGeography">Géographie</string>
+
+    <string name="activityMathL1TextTitle">Leçon 1: Addition</string>
+    <string name="activityMathL1Textbox1">Imaginez que vous ayez 6 tuiles que vous mettez dans un sac. Vous y ajoutez 3 tuiles, et lorsque vous les comptez, vous constatez qu\'il vous en reste 9. C\'est un exemple d\'addition simple: 6 + 3 = 9. On peut résoudre n\'importe quelle addition de cette manière, en imaginant mettre des tuiles dans un sac, en y ajoutant d\'autres tuiles, puis en les comptant. Une autre stratégie consiste à utiliser la droite numérique: supposons que vous deviez calculer 3 + 5. Repérez 3 sur la droite numérique et comptez 5 nombres vers la droite; vous devriez trouver que la somme est 8.</string>
+    <string name="activityMathL2TextTitle">Leçon 2: Soustraction</string>
+    <string name="activityMathL2Textbox1">La soustraction signifie enlever. \n\n Exemple: 9 – 4 = 5\n\n Imaginez que vous ayez 9 barres de chocolat. En enlevant 4 d\'entre elles, il vous en reste 5. \n\n Pour vérifier ce résultat, nous pouvons effectuer une addition. \n 5 + 4 = 9</string>
+    <string name="activityMathL3TextTitle">Leçon 3: Multiplication</string>
+    <string name="activityMathL3Textbox1">La multiplication est une addition répétée.\n\n Exemple: 3 x 4 = 12\nDonc 3 + 3 + 3 + 3 est égal à 12.\n La multiplication est commutative.</string>
+    <string name="activityMathL4TextTitle">Leçon 4: Division</string>
+    <string name="activityMathL4Textbox1">La division consiste à partager ou à regrouper de manière égale.\n\nExemple: 12 ÷ 3 = 4\nCela signifie que 12 bonbons partagés équitablement entre 3 personnes donnent 4 bonbons à chaque personne.</string>
+    <string name="activityMathL5TextTitle">Leçon 5: PEDMAS</string>
+    <string name="activityMathL5Textbox1">PEDMAS est une méthode pour apprendre l\'ordre des opérations.\n
+    P E D M A S\n\n
+    Parenthèses -&gt; Exposants -&gt; Division/Multiplication -&gt;
+    \nAddition/Soustraction (de gauche à droite).\n\n
+    Exemple: 6 + 4 × 3 = 6 + 12 = 18\n(6 + 4) × 3 = 10 × 3 = 30</string>
+
+    <string name="activityMathL6TextTitle">Leçon 6: Fractions</string>
+    <!--<string name="activityMathL6Textbox1">Une fraction représente des parties d\'un tout.\n\nLe numérateur (le nombre du haut) représente les parts que vous possédez.\n\nLe dénominateur, le nombre du bas, représente le nombre total de parties nécessaires pour former un tout.\n\nExemple: 1/2 est l'une des deux parties égales.\n\nFractions équivalentes: 1/2 = 2/4 = 3/6.</string>
+    -->
+    <string name="loginActivityTextEmailEmpty">Le champ e-mail ne peut pas être vide</string>
+    <string name="loginActivityTextEmailInvalid">Veuillez saisir une adresse e-mail valide</string>
+    <string name="loginActivityTextPasswordEmpty">Le mot de passe ne peut pas être vide</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">un</string>
+    <string name="second_fragment_label">deux</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

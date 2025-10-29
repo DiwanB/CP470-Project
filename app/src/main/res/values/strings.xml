@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CP470-Project</string>
-    <string name="LoginHint" />
+    <string name="about">About</string>
+
     <string name="activityLoginTextTitle">LEARNERS</string>
     <string name="activityLoginTextLogin">Login</string>
     <string name="activityLoginTextHint">user@email.com</string>
@@ -54,7 +55,7 @@
     <string name="activityMathTextbox4">l4 desc</string>
     <string name="activityMathTextButton5">Lesson 5</string>
     <string name="activityMathTextbox5">l5 desc</string>
-    <string name="activityMathTextButton6">Lesson6</string>
+    <string name="activityMathTextButton6">Lesson 6</string>
     <string name="activityMathTextbox6">L6 description</string>
     <string name="activityMathTextButtonQuiz2">Quiz 2</string>
     <string name="activityMathTextboxQuiz2">Test your knowledge on Lessons 4-6</string>
@@ -82,7 +83,7 @@
     <string name="activityMathL1TextTitle">Lesson 1: Addition</string>
     <string name="activityMathL1Textbox1">Say you had 6 tiles that you put in a bag. You put 3 more tiles into that bag, and when you take them out to count, you see you have 9 tiles. This is an example of a basic addition equation: 6 + 3 = 9. We can do any addition problem in such a way, by envisioning putting tiles into a bag, adding more tiles to that bag, and then counting them. \n\n Another strategy we can use is the number line: say we needed to do 3 + 5. Find 3 on the number line and count 5 numbers to the right, you should find the sum to be 8.</string>
     <string name="activityMathL2TextTitle">Lesson 2: Subtraction</string>
-    <string name="activityMathL2Textbox1">Subtraction means taking away. \n\n Example 9 - 4 = 5\n\n Think if you had 9 chocolate bars. Remove 4 of them and 5 chocolate bars remain. \n\n To double check if this is correct we can check with addition. \n 5 + 4 = 9</string>
+    <string name="activityMathL2Textbox1">Subtraction means taking away. \n\n Example 9 – 4 = 5\n\n Imagine if you had 9 chocolate bars. Remove 4 of them and 5 chocolate bars remain. \n\n To double check if this is correct we can check with addition. \n 5 + 4 = 9</string>
     <string name="activityMathL3TextTitle">Lesson 3: Multiplication</string>
     <string name="activityMathL3Textbox1">Multiplication is repeated addition.\n\n Example 3 x 4 = 12\nTherefore 3 + 3 + 3 +3 is the same\nMultiplication is commutative.</string>
     <string name="activityMathL4TextTitle">Lesson 4: Division</string>
@@ -90,7 +91,7 @@
     <string name="activityMathL5TextTitle">Lesson 5: BEDMAS</string>
     <string name="activityMathL5Textbox1"><![CDATA[BEDMAS is a way to learn the Order of Operations\n B E D M A S\n\nBrackets -> Exponents -> Division/Multiplication ->\nAddition/Subtraction (left to right).\n\nExample: 6 + 4 × 3 = 6 + 12 = 18\n(6 + 4) × 3 = 10 × 3 = 30]]></string>
     <string name="activityMathL6TextTitle">Lesson 6: Fractions</string>
-    <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you have\n__________________________________\nThe bottom numer the DENOMINATOR are the total equal parts\n\nExample: 1/2 is one of two equal parts.\n\nEquivalent fractions: 1/2 = 2/4 = 3/6.</string>
+    <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you \"have\".\n__________________________________\nWhereas the bottom number, the DENOMINATOR are the total parts needed to make a whole.\n\nExample: ½ is one of two equal parts.\n\nEquivalent fractions: ½ = 2/4 = 3/6.</string>
     <string name="loginActivityTextEmailEmpty">Email cannot be empty</string>
     <string name="loginActivityTextEmailInvalid">Enter a valid email address</string>
     <string name="loginActivityTextPasswordEmpty">Password cannot be empty</string>
