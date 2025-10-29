@@ -41,5 +41,9 @@ public class SubjectActivity extends AppCompatActivity {
             Intent intent = new Intent(SubjectActivity.this, EnglishActivity.class);
             startActivity(intent);
         });
+        scienceButton.setOnClickListener(v-> {
+            Intent intent = new Intent(SubjectActivity.this, ScienceActivity.class);
+            startActivity(intent);
+        });
     }
 }
