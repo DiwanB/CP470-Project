@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathL6Activity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="56dp"
+        android:text="Lesson 6: Fractions"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="364dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="158dp"
+
+        android:lineSpacingExtra="4sp"
+
+        android:text="A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you have\n__________________________________\nThe bottom numer the DENOMINATOR are the total equal parts\n\nExample: 1/2 is one of two equal parts.\n\nEquivalent fractions: 1/2 = 2/4 = 3/6."
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
