@@ -24,6 +24,21 @@
             android:name=".MathL1Activity"
             android:exported="false" />
         <activity
+            android:name=".MathL2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MathL3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MathL4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MathL5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MathL6Activity"
+            android:exported="false" />
+        <activity
             android:name=".MathActivity"
             android:exported="false" />
         <activity
