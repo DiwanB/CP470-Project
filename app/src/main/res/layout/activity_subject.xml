@@ -23,8 +23,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60sp"
 
-
-        android:text="Math"
+        android:text="@string/math"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -48,8 +47,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60sp"
 
-
-        android:text="English"
+        android:text="@string/english"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -72,8 +70,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60sp"
 
-
-        android:text="Science"
+        android:text="@string/science"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -96,8 +93,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60sp"
 
-
-        android:text="Geography"
+        android:text="@string/geography"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CP470Project" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name ="android:windowBackground">@color/blizzardBlue</item>
+        <item name="android:windowBackground">@color/blizzardBlue</item>
         <item name="colorPrimary">@color/reddish</item>
         <item name="colorOnPrimary">@color/black</item>
 
@@ -11,8 +11,10 @@
 
         <item name="materialButtonStyle">@style/MyApp.MaterialButton</item>
     </style>
+
     <style name="MyApp.MaterialButton" parent="Widget.Material3.Button">
         <item name="cornerRadius">10dp</item>
     </style>
+
     <style name="Theme.CP470Project" parent="Base.Theme.CP470Project" />
 </resources>

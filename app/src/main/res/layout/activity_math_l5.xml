@@ -7,12 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".MathL5Activity">
 
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:text="Lesson 5: BEDMAS"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"

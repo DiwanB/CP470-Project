@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CP470-Project</string>
-    <string name="math">Math</string>
-    <string name="english">English</string>
-    <string name="science">Science</string>
-    <string name="geography">Geography</string>
-    <string name="about">About</string>
+    <string name="math">Maths</string>
+    <string name="english">Anglais</string>
+    <string name="science">Sciences</string>
+    <string name="geography">Géographie</string>
+    <string name="about">À propos</string>
     <string name="LoginHint" />
 
     <!-- Strings used for fragments for navigation -->
