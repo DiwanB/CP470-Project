@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:text="@string/english"
+            android:text="@string/activityEnglishTextTitle"
             android:textStyle="bold"
             android:textSize="40sp" />
 
@@ -56,7 +56,7 @@
                 android:id="@+id/englishL1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 1"
+                android:text="@string/activityEnglishTextButton1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="L1 description"
+                android:text="@string/activityEnglishTextbox1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -79,7 +79,7 @@
                 android:id="@+id/englishL2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 2"
+                android:text="@string/activityEnglishTextButton2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="description for Lesson 2"
+                android:text="@string/activityEnglishTextbox2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -102,7 +102,7 @@
                 android:id="@+id/englishL3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 3"
+                android:text="@string/activityEnglishTextButton3"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Description for Lesson 3"
+                android:text="@string/activityEnglishTextbox3"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -125,7 +125,7 @@
                 android:id="@+id/englishQ1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 1"
+                android:text="@string/activityEnglishTextButtonQuiz1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Quiz 1 cover etc etc"
+                android:text="@string/activityEnglishTextboxQuiz1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -148,7 +148,7 @@
                 android:id="@+id/englishL4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 4"
+                android:text="@string/activityEnglishTextButton4"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l4 desc"
+                android:text="@string/activityEnglishTextbox4"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -171,7 +171,7 @@
                 android:id="@+id/englishL5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 5"
+                android:text="@string/activityEnglishTextButton5"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l5 desc"
+                android:text="@string/activityEnglishTextbox5"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -194,7 +194,7 @@
                 android:id="@+id/englishL6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson6"
+                android:text="@string/activityEnglishTextButton6"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -202,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="L6 description"
+                android:text="@string/activityEnglishTextbox6"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -217,7 +217,7 @@
                 android:id="@+id/englishQ2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 2"
+                android:text="@string/activityEnglishTextButtonQuiz2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -225,10 +225,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Test your knowledge on Lessons 4-6"
+                android:text="@string/activityEnglishTextboxQuiz2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

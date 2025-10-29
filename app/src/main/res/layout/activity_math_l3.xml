@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
-        android:text="Lesson 3: Multiplication"
+        android:text="@string/activityMathL3TextTitle"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,7 +36,7 @@
 
         android:lineSpacingExtra="4sp"
 
-        android:text="Multiplication is repeated addition.\n\n Example 3 x 4 = 12\nTherefore 3 + 3 + 3 +3 is the same\nMultiplication is commutative. "
+        android:text="@string/activityMathL3Textbox1"
         android:textAlignment="center"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"

@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:text="@string/geography"
+            android:text="@string/activityGeographyTextTitle"
             android:textStyle="bold"
             android:textSize="40sp" />
 
@@ -55,7 +55,7 @@
                 android:id="@+id/geoL1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 1"
+                android:text="@string/activityGeographyTextButton1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Basic Equations"
+                android:text="@string/activityGeographyTextbox1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -78,7 +78,7 @@
                 android:id="@+id/geoL2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 2"
+                android:text="@string/activityGeographyTextButton2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="description for Lesson 2"
+                android:text="@string/activityGeographyTextbox2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -101,7 +101,7 @@
                 android:id="@+id/geoL3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 3"
+                android:text="@string/activityGeographyTextButton3"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Description for Lesson 3"
+                android:text="@string/activityGeographyTextbox3"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -124,7 +124,7 @@
                 android:id="@+id/geoQ1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 1"
+                android:text="@string/activityGeographyTextButtonQuiz1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Quiz 1 cover etc etc"
+                android:text="@string/activityGeographyTextboxQuiz1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -147,7 +147,7 @@
                 android:id="@+id/geoL4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 4"
+                android:text="@string/activityGeographyTextButton4"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -155,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l4 desc"
+                android:text="@string/activityGeographyTextbox4"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -170,7 +170,7 @@
                 android:id="@+id/geoL5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 5"
+                android:text="@string/activityGeographyTextButton5"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -178,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l5 desc"
+                android:text="@string/activityGeographyTextbox5"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -193,7 +193,7 @@
                 android:id="@+id/geoL6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson6"
+                android:text="@string/activityGeographyTextButton6"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="L6 description"
+                android:text="@string/activityGeographyTextbox6"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -216,7 +216,7 @@
                 android:id="@+id/geoQ2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 2"
+                android:text="@string/activityGeographyTextButtonQuiz2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -224,10 +224,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Test your knowledge on Lessons 4-6"
+                android:text="@string/activityGeographyTextboxQuiz2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

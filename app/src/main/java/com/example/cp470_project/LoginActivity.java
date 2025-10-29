@@ -46,15 +46,15 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordEditText.getText().toString();
 
             if (currentEmail.isEmpty()) {
-                loginEmail.setError("Email cannot be empty");
+                loginEmail.setError(getString(R.string.loginActivityTextEmailEmpty));
                 return;
             }
             if (!android.util.Patterns.EMAIL_ADDRESS.matcher(currentEmail).matches()) {
-                loginEmail.setError("Enter a valid email address");
+                loginEmail.setError(getString(R.string.loginActivityTextEmailInvalid));
                 return;
             }
             if (password.isEmpty()) {
-                passwordEditText.setError("Password cannot be empty");
+                passwordEditText.setError(getString(R.string.loginActivityTextPasswordEmpty));
                 return;
             }
 

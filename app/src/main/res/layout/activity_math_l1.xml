@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="36dp"
-        android:text="Lesson 1: Addition"
+        android:text="@string/activityMathL1TextTitle"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +34,7 @@
 
         android:lineSpacingExtra="4sp"
 
-        android:text="Say you had 6 tiles that you put in a bag. You put 3 more tiles into that bag, and when you take them out to count, you see you have 9 tiles. This is an example of a basic addition equation: 6 + 3 = 9. We can do any addition problem in such a way, by envisioning putting tiles into a bag, adding more tiles to that bag, and then counting them. \n\n Another strategy we can use is the number line: say we needed to do 3 + 5. Find 3 on the number line and count 5 numbers to the right, you should find the sum to be 8."
+        android:text="@string/activityMathL1Textbox1"
         android:textAlignment="center"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
