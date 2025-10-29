@@ -91,7 +91,7 @@
     <string name="activityMathL5TextTitle">Lesson 5: BEDMAS</string>
     <string name="activityMathL5Textbox1"><![CDATA[BEDMAS is a way to learn the Order of Operations\n B E D M A S\n\nBrackets -> Exponents -> Division/Multiplication ->\nAddition/Subtraction (left to right).\n\nExample: 6 + 4 × 3 = 6 + 12 = 18\n(6 + 4) × 3 = 10 × 3 = 30]]></string>
     <string name="activityMathL6TextTitle">Lesson 6: Fractions</string>
-    <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you \"have\".\n__________________________________\nWhereas the bottom number, the DENOMINATOR are the total parts needed to make a whole.\n\nExample: ½ is one of two equal parts.\n\nEquivalent fractions: ½ = 2/4 = 3/6.</string>
+    <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you \"have\".\n__________________________________\nWhereas the bottom number, the DENOMINATOR are the total parts needed to make a whole.\n\nExample: 1/2 is one of two equal parts.\n\nEquivalent fractions: 1/2 = 2/4 = 3/6.</string>
     <string name="loginActivityTextEmailEmpty">Email cannot be empty</string>
     <string name="loginActivityTextEmailInvalid">Enter a valid email address</string>
     <string name="loginActivityTextPasswordEmpty">Password cannot be empty</string>
