@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:text="Science"
+            android:text="@string/activityScienceTextTitle"
             android:textStyle="bold"
             android:textSize="40sp" />
 
@@ -34,7 +34,7 @@
                 android:id="@+id/scienceL1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 1"
+                android:text="@string/activityScienceTextButton1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="basic science"
+                android:text="@string/activityScienceTextbox1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -57,7 +57,7 @@
                 android:id="@+id/scienceL2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 2"
+                android:text="@string/activityScienceTextButton2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="description for Lesson 2"
+                android:text="@string/activityScienceTextbox2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -80,7 +80,7 @@
                 android:id="@+id/scienceL3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 3"
+                android:text="@string/activityScienceTextButton3"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Description for Lesson 3"
+                android:text="@string/activityScienceTextbox3"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -103,7 +103,7 @@
                 android:id="@+id/scienceQ1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 1"
+                android:text="@string/activityScienceTextButtonQuiz1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Quiz 1 cover etc etc"
+                android:text="@string/activityScienceTextboxQuiz1"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -126,7 +126,7 @@
                 android:id="@+id/scienceL4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 4"
+                android:text="@string/activityScienceTextButton4"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l4 desc"
+                android:text="@string/activityScienceTextbox4"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -149,7 +149,7 @@
                 android:id="@+id/scienceL5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson 5"
+                android:text="@string/activityScienceTextButton5"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -157,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="l5 desc"
+                android:text="@string/activityScienceTextbox5"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -172,7 +172,7 @@
                 android:id="@+id/scienceL6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Lesson6"
+                android:text="@string/activityScienceTextButton6"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="L6 description"
+                android:text="@string/activityScienceTextbox6"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -195,7 +195,7 @@
                 android:id="@+id/scienceQ2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Quiz 2"
+                android:text="@string/activityScienceTextButtonQuiz2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -203,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="Test your knowledge on Lessons 4-6"
+                android:text="@string/activityScienceTextboxQuiz2"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 

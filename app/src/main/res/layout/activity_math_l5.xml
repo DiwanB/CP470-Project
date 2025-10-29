@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="56dp"
-        android:text="Lesson 5: BEDMAS"
+        android:text="@string/activityMathL5TextTitle"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
 
         android:lineSpacingExtra="4sp"
 
-        android:text="BEDMAS is a way to learn the Order of Operations\n B E D M A S\n\nBrackets -> Exponents -> Division/Multiplication ->\nAddition/Subtraction (left to right).\n\nExample: 6 + 4 × 3 = 6 + 12 = 18\n(6 + 4) × 3 = 10 × 3 = 30"
+        android:text="@string/activityMathL5Textbox1"
         android:textAlignment="center"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"

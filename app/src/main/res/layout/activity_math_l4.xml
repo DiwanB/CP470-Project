@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="56dp"
-        android:text="Lesson 4: Division"
+        android:text="@string/activityMathL4TextTitle"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
 
         android:lineSpacingExtra="4sp"
 
-        android:text="Division is sharing or grouping equally\n\nExample: 12 ÷ 3 = 4\nThis means that 12 candy split amongst 3 people equally gives 4 to each person."
+        android:text="@string/activityMathL4Textbox1"
         android:textAlignment="center"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"

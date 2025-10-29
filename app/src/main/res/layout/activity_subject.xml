@@ -24,7 +24,7 @@
         android:layout_marginBottom="60sp"
 
 
-        android:text="Math"
+        android:text="@string/activitySubjectTextMath"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -49,7 +49,7 @@
         android:layout_marginBottom="60sp"
 
 
-        android:text="English"
+        android:text="@string/activitySubjectTextEnglish"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -73,7 +73,7 @@
         android:layout_marginBottom="60sp"
 
 
-        android:text="Science"
+        android:text="@string/activitySubjectTextScience"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -97,7 +97,7 @@
         android:layout_marginBottom="60sp"
 
 
-        android:text="Geography"
+        android:text="@string/activitySubjectTextGeography"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"

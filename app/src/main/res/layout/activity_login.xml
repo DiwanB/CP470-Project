@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LEARNERS"
+        android:text="@string/activityLoginTextTitle"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:textSize = "70sp"
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/activityLoginTextLogin"
         android:textSize = "20sp"
         android:textStyle="bold"
         />
@@ -34,7 +34,7 @@
         android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="user@email.com"
+        android:hint="@string/activityLoginTextHint"
         android:inputType="textEmailAddress"
         android:autofillHints="emailAddress"
         />
@@ -42,7 +42,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/activityLoginTextPassword"
         android:textSize = "20sp"
         android:textStyle="bold"
         />
@@ -57,7 +57,7 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/activityLoginTextLoginButton"
         android:textSize="20sp"
         />
     <!--spacer to eat remaining vertical space so something can sit at bottom if needed -->

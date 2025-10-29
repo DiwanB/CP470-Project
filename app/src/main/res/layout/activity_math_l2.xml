@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="52dp"
-        android:text="Lesson 2: Subtraction"
+        android:text="@string/activityMathL2TextTitle"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
 
         android:lineSpacingExtra="4sp"
 
-        android:text="Subtraction means taking away. \n\n Example 9 - 4 = 5\n\n Think if you had 9 chocolate bars. Remove 4 of them and 5 chocolate bars remain. \n\n To double check if this is correct we can check with addition. \n 5 + 4 = 9  "
+        android:text="@string/activityMathL2Textbox1"
         android:textAlignment="center"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
