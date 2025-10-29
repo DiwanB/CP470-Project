@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP470Project">
         <activity
+            android:name=".GeographyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ScienceActivity"
             android:exported="false" />
         <activity

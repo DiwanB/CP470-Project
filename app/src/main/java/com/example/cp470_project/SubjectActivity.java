@@ -45,5 +45,9 @@ public class SubjectActivity extends AppCompatActivity {
             Intent intent = new Intent(SubjectActivity.this, ScienceActivity.class);
             startActivity(intent);
         });
+        geographyButton.setOnClickListener(v-> {
+            Intent intent = new Intent(SubjectActivity.this, GeographyActivity.class);
+            startActivity(intent);
+        });
     }
 }
