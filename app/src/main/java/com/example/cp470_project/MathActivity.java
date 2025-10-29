@@ -44,7 +44,7 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 2");
-                Intent intent = new Intent(MathActivity.this, LessonActivity.class);
+                Intent intent = new Intent(MathActivity.this, MathL2Activity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 3");
-                Intent intent = new Intent(MathActivity.this, LessonActivity.class);
+                Intent intent = new Intent(MathActivity.this, MathL3Activity.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +60,7 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 4");
-                Intent intent = new Intent(MathActivity.this, LessonActivity.class);
+                Intent intent = new Intent(MathActivity.this, MathL4Activity.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 5");
-                Intent intent = new Intent(MathActivity.this, LessonActivity.class);
+                Intent intent = new Intent(MathActivity.this, MathL5Activity.class);
                 startActivity(intent);
             }
         });
@@ -76,7 +76,7 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 6");
-                Intent intent = new Intent(MathActivity.this, LessonActivity.class);
+                Intent intent = new Intent(MathActivity.this, MathL6Activity.class);
                 startActivity(intent);
             }
         });
