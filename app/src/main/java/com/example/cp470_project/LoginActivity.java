@@ -3,10 +3,13 @@ package com.example.cp470_project;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginEmail;
     private EditText passwordEditText;
     private Button loginButton;
+    private ProgressBar progressBar;
     private static final String ACTIVITY_NAME ="LoginActivity";
     private static final String PREFS_NAME = "cp470_prefs";
     private static final String KEY_DEFAULT_EMAIL = "DefaultEmail";
@@ -36,6 +40,8 @@ public class LoginActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
 
+        progressBar = findViewById(R.id.progressBarLogin);
+
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String savedEmail = prefs.getString(KEY_DEFAULT_EMAIL, "email@domain.com");
         loginEmail.setText(savedEmail);
@@ -44,7 +50,14 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(v-> {
             String currentEmail = loginEmail.getText().toString().trim();
             String password = passwordEditText.getText().toString();
-
+            progressBar.setVisibility(View.VISIBLE);
+            loginButton.setEnabled(false);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                Intent intent = new Intent(LoginActivity.this, SubjectActivity.class);
+                startActivity(intent);
+                progressBar.setVisibility(View.GONE);
+                loginButton.setEnabled(true);
+            }, 3000);
             if (currentEmail.isEmpty()) {
                 loginEmail.setError(getString(R.string.loginActivityTextEmailEmpty));
                 return;
