@@ -1,82 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizActivity">
-
-    <com.google.android.material.appbar.AppBarLayout
+    android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/quizContainer"
+        android:orientation="vertical"
+        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Light">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:title=""
-            app:titleTextColor="@android:color/black"
-            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="36dp"
-        android:text="Question #"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="144dp"
-        android:text="Question text goes here"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:layout_width="387dp"
-        android:layout_height="193dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <RadioButton
-            android:id="@+id/ans1"
+        <!-- Question 1 -->
+        <TextView
+            android:id="@+id/textQuestion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 1" />
+            android:text="1) What is 2 + 2?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-        <RadioButton
-            android:id="@+id/ans2"
+        <RadioGroup
+            android:id="@+id/radioGroupQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q1_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/q1_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="22" />
+
+            <RadioButton
+                android:id="@+id/q1_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="5" />
+
+            <RadioButton
+                android:id="@+id/q1_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="4" />
+        </RadioGroup>
+
+        <!-- Small spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Question 2 -->
+        <TextView
+            android:id="@+id/textQuestion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 2" />
+            android:text="2) What is 5-1?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-        <RadioButton
-            android:id="@+id/ans3"
+        <RadioGroup
+            android:id="@+id/radioGroupQ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="6" />
+
+            <RadioButton
+                android:id="@+id/q2_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="5" />
+
+            <RadioButton
+                android:id="@+id/q2_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/q2_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="123" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Question 3 -->
+        <TextView
+            android:id="@+id/textQuestion3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 3" />
+            android:text="3) What is 5x3?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-        <RadioButton
-            android:id="@+id/ans4"
+        <RadioGroup
+            android:id="@+id/radioGroupQ3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q3_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/q3_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/q3_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/q3_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="2" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textQuestion4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer 4" />
-    </RadioGroup>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="3) What is 12÷4?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q4_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/q4_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/q4_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/q4_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="5" />
+        </RadioGroup>
+        <!-- Add more questions here in exactly the same pattern -->
+
+        <!-- Submit button at the very bottom -->
+        <Button
+            android:id="@+id/buttonSubmitQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
