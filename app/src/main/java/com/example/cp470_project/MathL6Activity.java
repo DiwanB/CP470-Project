@@ -29,6 +29,11 @@ public class MathL6Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
         Drawable overflowIcon = toolbar.getOverflowIcon();
         if (overflowIcon != null) {
             overflowIcon.setTint(ContextCompat.getColor(this, android.R.color.black));
@@ -47,16 +52,24 @@ public class MathL6Activity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem mi) {
+        if (mi.getItemId() == android.R.id.home){
+            onBackPressed();
+            return true;
+        }
+
         if (mi.getItemId() == R.id.action_home) {
             Log.d("Toolbar", "Home selected");
             Intent intent = new Intent(this, SubjectActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP); // just clears all previous activity stuff
             startActivity(intent);
-        } else if (mi.getItemId() == R.id.action_about) {
+            return true;
+        }
+        if (mi.getItemId() == R.id.action_about) {
             Log.d("Toolbar", "About selected");
             Toast toast = Toast.makeText(this , "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366", Toast.LENGTH_SHORT);
             toast.show();
+            return true;
         }
-        return true;
+        return super.onOptionsItemSelected(mi);
     }
 }
