@@ -8,7 +8,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        android:theme="@style/ThemeOverlay.MaterialComponents.Light">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="1dp"
-        tools:context=".EnglishActivityActivity">
+        tools:context=".EnglishActivity">
 
         <TextView
             android:id="@+id/englishTitle"
