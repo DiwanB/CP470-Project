@@ -40,7 +40,7 @@
             android:layout_marginBottom="60sp"
 
 
-            android:text="@string/English"
+            android:text="@string/Math"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
