@@ -17,14 +17,6 @@
         android:id="@+id/textScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: 80%" />
-
-    <TextView
-        android:id="@+id/textDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date/time"
-        android:textSize="12sp"
-        android:textColor="#777777" />
+        android:text="Score: xx.x%" />
 
 </LinearLayout>

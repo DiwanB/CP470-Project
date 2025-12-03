@@ -96,6 +96,9 @@ public class LoginActivity extends AppCompatActivity {
 
                             Intent intent = new Intent(LoginActivity.this, SubjectActivity.class);
                             intent.putExtra("userId", userId);
+
+                            prefs.edit().putString("userId", userId).apply(); // saves the user's ID for firebase retrieval
+
                             startActivity(intent);
                             finish();
 

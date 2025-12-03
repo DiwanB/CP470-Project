@@ -44,10 +44,12 @@ public class SignupActivity extends AppCompatActivity {
     private void createNewUser(User user) {
         String userId = mDatabase.child("users").push().getKey();
 
-        mDatabase.child("users").child(userId).setValue(user)
-            .addOnCompleteListener(task -> {
+        mDatabase.child("users").child(userId).setValue(user).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(this, "Account created!", Toast.LENGTH_SHORT).show();
+                    SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+                    prefs.edit().putString("userId", userId).apply(); // saves the user's ID for firebase retrieval
+
                     startActivity(new Intent(this, SubjectActivity.class));
                 } else {
                     Toast.makeText(this, "Failed to create account!", Toast.LENGTH_SHORT).show();

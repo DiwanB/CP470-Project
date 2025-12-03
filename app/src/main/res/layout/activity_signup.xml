@@ -9,28 +9,55 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding = "12dp"
+        android:padding = "20dp"
         android:orientation="vertical"
         android:background="@color/blizzardBlue"
         tools:context=".LoginActivity">
 
         <!--Login-->
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/learners" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  welcome to"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="@string/activityLoginTextTitle"
-            android:textColor="@color/black"
             android:textAlignment="center"
-            android:textSize = "70sp"
-            android:textStyle = "bold"
-            android:fontFamily="sans-serif-condensed-medium" />
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize = "25sp"
+            android:textAlignment="viewEnd"
+            android:text="start learning smarter!  "
+            android:textStyle="italic"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="251dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/activitySignupTextName"
-            android:textSize = "20sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
@@ -83,14 +110,6 @@
             android:layout_height="wrap_content"
             android:text="@string/activitySignupBackToLoginButton"
             android:textSize="20sp"
-            />
-
-
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
             />
 
     </LinearLayout>

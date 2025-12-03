@@ -55,16 +55,11 @@ public class QuizResultsAdapter extends RecyclerView.Adapter<QuizResultsAdapter.
             super(itemView);
             textSubject = itemView.findViewById(R.id.textSubject);
             textScore = itemView.findViewById(R.id.textScore);
-            textDate = itemView.findViewById(R.id.textDate);
         }
 
         void bind(QuizResult result) {
             textSubject.setText(result.subject);
             textScore.setText(result.score + "%");
-
-            Date date = new Date(result.timestamp);
-            String formatted = DateFormat.getDateTimeInstance().format(date);
-            textDate.setText(formatted);
 
             itemView.setOnClickListener(v -> {
                 if (listener != null) listener.onResultClick(result);
