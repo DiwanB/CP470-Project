@@ -76,7 +76,6 @@
     <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you \"have\".\n__________________________________\nWhereas the bottom number, the DENOMINATOR are the total parts needed to make a whole.\n\nExample: 1/2 is one of two equal parts.\n\nEquivalent fractions: 1/2 = 2/4 = 3/6.</string>
 
 
-
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
