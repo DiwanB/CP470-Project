@@ -70,6 +70,12 @@ public class MathL3Activity extends AppCompatActivity {
             toast.show();
             return true;
         }
+        if (mi.getItemId() == R.id.menu_profile) {
+            Log.d("Toolbar", "Profile Selected");
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(mi);
     }
 }

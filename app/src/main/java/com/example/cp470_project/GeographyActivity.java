@@ -139,7 +139,7 @@ public class GeographyActivity extends AppCompatActivity {
             return true;
         }
         else if (mi.getItemId() == R.id.menu_profile) {
-            Intent intent = new Intent(GeographyActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
             return true;
         }

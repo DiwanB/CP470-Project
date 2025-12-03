@@ -66,8 +66,14 @@ public class MathL1Activity extends AppCompatActivity {
         }
         if (mi.getItemId() == R.id.action_about) {
             Log.d("Toolbar", "About selected");
-            Toast toast = Toast.makeText(this , "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366", Toast.LENGTH_SHORT);
             toast.show();
+            return true;
+        }
+        if (mi.getItemId() == R.id.menu_profile) {
+            Log.d("Toolbar", "Profile Selected");
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(mi);

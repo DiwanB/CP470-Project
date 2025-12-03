@@ -136,7 +136,7 @@ public class EnglishActivity extends AppCompatActivity {
             toast.show();
             return true;
         } else if (mi.getItemId() == R.id.menu_profile) {
-            Intent intent = new Intent(EnglishActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(this, ProfileActivity.class);
             startActivity(intent);
             return true;
         }

@@ -65,10 +65,17 @@ public class LessonActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP); // just clears all previous activity stuff
             startActivity(intent);
             return true;
-        }  if (mi.getItemId() == R.id.action_about) {
+        }
+        if (mi.getItemId() == R.id.action_about) {
             Log.d("Toolbar", "About selected");
-            Toast toast = Toast.makeText(this , "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366", Toast.LENGTH_SHORT);
             toast.show();
+            return true;
+        }
+        if (mi.getItemId() == R.id.menu_profile) {
+            Log.d("Toolbar", "Profile Selected");
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(mi);
