@@ -47,7 +47,6 @@ public class GeographyActivity extends AppCompatActivity {
         Button mL4 = findViewById(R.id.geoL4);
         Button mL5 = findViewById(R.id.geoL5);
         Button mL6 = findViewById(R.id.geoL6);
-        Button mQ1 = findViewById(R.id.geoQ1);
         Button mQ2 = findViewById(R.id.geoQ2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -102,14 +101,7 @@ public class GeographyActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        mQ1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i(ACTIVITY_NAME, "User clicked Quiz 1");
-                Intent intent = new Intent(GeographyActivity.this, QuizActivity.class);
-                startActivity(intent);
-            }
-        });
+
         mQ2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

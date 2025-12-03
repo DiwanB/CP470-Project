@@ -47,7 +47,6 @@ public class ScienceActivity extends AppCompatActivity {
         Button mL4 = findViewById(R.id.scienceL4);
         Button mL5 = findViewById(R.id.scienceL5);
         Button mL6 = findViewById(R.id.scienceL6);
-        Button mQ1 = findViewById(R.id.scienceQ1);
         Button mQ2 = findViewById(R.id.scienceQ2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -99,14 +98,6 @@ public class ScienceActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 6");
                 Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
-                startActivity(intent);
-            }
-        });
-        mQ1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i(ACTIVITY_NAME, "User clicked Quiz 1");
-                Intent intent = new Intent(ScienceActivity.this, QuizActivity.class);
                 startActivity(intent);
             }
         });
