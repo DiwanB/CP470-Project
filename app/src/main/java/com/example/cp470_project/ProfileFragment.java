@@ -2,11 +2,14 @@ package com.example.cp470_project;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +51,8 @@ public class ProfileFragment extends Fragment {
         TextView nameText = view.findViewById(R.id.textProfileName);
         TextView emailText = view.findViewById(R.id.textProfileEmail);
         TextView statsText = view.findViewById(R.id.textProfileStats);
+        Button resetAccountButton;
+        Button deleteAccountButton;
 
         //TODO: later use real data
         SharedPreferences prefs = requireActivity().getSharedPreferences(APP_PREFS, Context.MODE_PRIVATE);
@@ -98,7 +103,7 @@ public class ProfileFragment extends Fragment {
                 int totalAttempts = mathAttempts + englishAttempts + scienceAttempts + geoAttempts;
                 double totalAvg = (totalAttempts == 0) ? 0 : (mathScore + englishScore + scienceScore + geoScore) / totalAttempts;
 
-                String stats = "Total quizzes: " +(mathAttempts+englishAttempts+scienceAttempts+geoAttempts) + " | Avg score: " + totalAvg;
+                String stats = "Total quizzes: " + (mathAttempts + englishAttempts + scienceAttempts + geoAttempts) + " | Avg score: " + totalAvg;
                 statsText.setText(stats);
                 adapter.notifyDataSetChanged();
             }
@@ -118,6 +123,7 @@ public class ProfileFragment extends Fragment {
             public void onResultClick(QuizResult result) {
                 showDetailDialog(result);
             }
+
             @Override
             public void onResultLongClick(QuizResult result) {
                 Toast.makeText(getContext(), "Long-pressed: " + result.subject + " (" + result.score + "%)",
@@ -126,16 +132,81 @@ public class ProfileFragment extends Fragment {
         });
 
         recyclerView.setAdapter(adapter);
-    }
 
+        resetAccountButton = view.findViewById(R.id.resetButton);
+        deleteAccountButton = view.findViewById(R.id.deleteButton);
+
+        deleteAccountButton.setOnClickListener(v -> {
+            new AlertDialog.Builder(requireContext())
+                .setTitle("Delete Account?")
+                .setMessage("Are you sure you want to permanently delete your account? This action cannot be undone.")
+                .setPositiveButton("Yes", (dialog, which) -> {
+
+                    DatabaseReference usersRef = FirebaseDatabase.getInstance()
+                            .getReference("users");
+
+                    usersRef.child(userId).removeValue((error, ref) -> {
+                        if (error == null) {
+                            Toast.makeText(requireContext(), "Account deleted.", Toast.LENGTH_SHORT).show();
+
+                            // clear stored session
+                            prefs.edit().remove("userId").apply();
+
+                            // go back to login
+                            Intent intent = new Intent(requireActivity(), LoginActivity.class);
+                            startActivity(intent);
+                            requireActivity().finish();
+                        } else {
+                            Toast.makeText(requireContext(), "Error deleting account", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                })
+                .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
+                .show();
+        });
+
+        resetAccountButton.setOnClickListener(v -> {
+
+            new AlertDialog.Builder(requireContext())
+                .setTitle("Reset Account Stats?")
+                .setMessage("Are you sure you want to reset all quiz data? This cannot be undone.")
+                .setPositiveButton("Yes", (dialog, which) -> {
+
+                    DatabaseReference resetRef = FirebaseDatabase.getInstance()
+                            .getReference("users")
+                            .child(userId);
+
+                    resetRef.child("MathAttempts").setValue(0);
+                    resetRef.child("MathScore").setValue(0.0);
+                    resetRef.child("EnglishAttempts").setValue(0);
+                    resetRef.child("EnglishScore").setValue(0.0);
+                    resetRef.child("ScienceAttempts").setValue(0);
+                    resetRef.child("ScienceScore").setValue(0.0);
+                    resetRef.child("GeoAttempts").setValue(0);
+                    resetRef.child("GeoScore").setValue(0.0);
+
+                    // Update list immediately
+                    results.clear();
+                    results.add(new QuizResult(1, "Math", 0));
+                    results.add(new QuizResult(2, "English", 0));
+                    results.add(new QuizResult(3, "Science", 0));
+                    results.add(new QuizResult(4, "Geography", 0));
+                    adapter.notifyDataSetChanged();
+
+                    statsText.setText("Total quizzes: 0 | Avg score: 0");
+                    Toast.makeText(requireContext(), "Scores reset.", Toast.LENGTH_SHORT).show();
+                })
+                .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
+                .show();
+        });
+    }
 
     private void showDetailDialog(QuizResult result) {
         if (getContext() == null) return;
 
         String message = "Subject: " + result.subject + "\nScore: " + result.score + "%";
 
-        new AlertDialog.Builder(getContext()).setTitle("Quiz Result Details").setMessage(message)
-                .setPositiveButton("OK", null)
-                .show();
+        new AlertDialog.Builder(getContext()).setTitle("Quiz Result Details").setMessage(message).setPositiveButton("OK", null).show();
     }
 }
