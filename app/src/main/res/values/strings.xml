@@ -28,21 +28,21 @@
     <string name="TextButton6">Lesson 6</string>
 
     <string name="English">English</string>
-    <string name="activityEnglishTextbox1">L1 description</string>
-    <string name="activityEnglishTextbox2">description for Lesson 2</string>
-    <string name="activityEnglishTextbox3">Description for Lesson 3</string>
-    <string name="activityEnglishTextbox4">l4 desc</string>
-    <string name="activityEnglishTextbox5">l5 desc</string>
-    <string name="activityEnglishTextbox6">L6 description</string>
+    <string name="activityEnglishTextbox1">Intro to English</string>
+    <string name="activityEnglishTextbox2">Vocabulary Basics</string>
+    <string name="activityEnglishTextbox3">Simple Sentences</string>
+    <string name="activityEnglishTextbox4">Nouns, Verbs, Adjectives</string>
+    <string name="activityEnglishTextbox5">Reading Comprehension</string>
+    <string name="activityEnglishTextbox6">Paragraph Structure</string>
     <string name="activityEnglishTextboxQuiz1">Quiz 1 cover etc etc</string>
 
     <string name="Geography">Geography</string>
-    <string name="activityGeographyTextbox1">Basic Equations</string>
-    <string name="activityGeographyTextbox2">description for Lesson 2</string>
-    <string name="activityGeographyTextbox3">Description for Lesson 3</string>
-    <string name="activityGeographyTextbox4">l4 desc</string>
-    <string name="activityGeographyTextbox5">l5 desc</string>
-    <string name="activityGeographyTextbox6">L6 description</string>
+    <string name="activityGeographyTextbox1">Canadian Geography</string>
+    <string name="activityGeographyTextbox2">Provinces and Territories</string>
+    <string name="activityGeographyTextbox3">Canadian Physical Features</string>
+    <string name="activityGeographyTextbox4">Climate Regions</string>
+    <string name="activityGeographyTextbox5">Human Geography</string>
+    <string name="activityGeographyTextbox6">Indigenous Heritage</string>
 
     <string name="Math">Math</string>
     <string name="activityMathTextbox1">Addition</string>
@@ -53,12 +53,12 @@
     <string name="activityMathTextbox6">Fractions</string>
 
     <string name="Science">Science</string>
-    <string name="activityScienceTextbox1">basic science</string>
-    <string name="activityScienceTextbox2">description for Lesson 2</string>
-    <string name="activityScienceTextbox3">Description for Lesson 3</string>
-    <string name="activityScienceTextbox4">l4 desc</string>
-    <string name="activityScienceTextbox5">l5 desc</string>
-    <string name="activityScienceTextbox6">L6 description</string>
+    <string name="activityScienceTextbox1">Whats alive? Whats not?</string>
+    <string name="activityScienceTextbox2">The 5 Senses</string>
+    <string name="activityScienceTextbox3">Weather and Seasons</string>
+    <string name="activityScienceTextbox4">States of Matter</string>
+    <string name="activityScienceTextbox5">The Final Frontier: Space!</string>
+    <string name="activityScienceTextbox6">Basic Machines</string>
 
     <string name="activityLessonTextTitle">Lesson Title</string>
 
