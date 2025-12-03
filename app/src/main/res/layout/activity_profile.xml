@@ -5,10 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Shared toolbar -->
-    <include
-        android:id="@+id/profileToolbarInclude"
-        layout="@layout/toolbar_layout" />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Subjects"
+        app:titleTextColor="@android:color/black"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+
 
     <!-- Container where ProfileFragment will live -->
     <androidx.fragment.app.FragmentContainerView
