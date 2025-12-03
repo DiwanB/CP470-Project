@@ -68,7 +68,6 @@ public class SubjectActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu, menu);
-
         MenuItem homeItem = menu.findItem(R.id.action_home);
         if (homeItem != null) {
             homeItem.setVisible(false);
@@ -82,6 +81,10 @@ public class SubjectActivity extends AppCompatActivity {
             Toast.makeText(this,
                     "Version 1.0, by xlandr, LiamSoup123, eldym, DiwanB, Marushen1366",
                     Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (item.getItemId() == R.id.menu_profile) {
+            Intent intent = new Intent(SubjectActivity.this, ProfileActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
