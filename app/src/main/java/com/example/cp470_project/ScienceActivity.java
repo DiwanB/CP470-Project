@@ -134,6 +134,11 @@ public class ScienceActivity extends AppCompatActivity {
             toast.show();
             return true;
         }
+        else if (mi.getItemId() == R.id.menu_profile) {
+            Intent intent = new Intent(ScienceActivity.this, ProfileActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(mi);
     }
 }

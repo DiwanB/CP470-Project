@@ -138,6 +138,11 @@ public class GeographyActivity extends AppCompatActivity {
             toast.show();
             return true;
         }
+        else if (mi.getItemId() == R.id.menu_profile) {
+            Intent intent = new Intent(GeographyActivity.this, ProfileActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(mi);
     }
 }
