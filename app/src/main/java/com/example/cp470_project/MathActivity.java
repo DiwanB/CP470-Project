@@ -48,7 +48,6 @@ public class MathActivity extends AppCompatActivity {
         Button mL5 = findViewById(R.id.mathL5);
         Button mL6 = findViewById(R.id.mathL6);
         Button mQ1 = findViewById(R.id.mathQ1);
-        Button mQ2 = findViewById(R.id.mathQ2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -106,14 +105,6 @@ public class MathActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Quiz 1");
-                Intent intent = new Intent(MathActivity.this, QuizActivity.class);
-                startActivity(intent);
-            }
-        });
-        mQ2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i(ACTIVITY_NAME, "User clicked Quiz 2");
                 Intent intent = new Intent(MathActivity.this, QuizActivity.class);
                 startActivity(intent);
             }

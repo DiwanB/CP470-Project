@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:text="@string/activityGeographyTextTitle"
+            android:text="@string/Geography"
             android:textStyle="bold"
             android:textSize="40sp" />
 
@@ -56,7 +56,7 @@
                 android:id="@+id/geoL1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton1"
+                android:text="@string/TextButton1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -79,7 +79,7 @@
                 android:id="@+id/geoL2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton2"
+                android:text="@string/TextButton2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -102,7 +102,7 @@
                 android:id="@+id/geoL3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton3"
+                android:text="@string/TextButton3"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -122,33 +122,10 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/geoQ1"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButtonQuiz1"
-                app:cornerRadius="0dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginStart="16dp"
-                android:text="@string/activityGeographyTextboxQuiz1"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="12dp"
-            android:orientation="horizontal">
-
-            <com.google.android.material.button.MaterialButton
                 android:id="@+id/geoL4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton4"
+                android:text="@string/TextButton4"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -171,7 +148,7 @@
                 android:id="@+id/geoL5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton5"
+                android:text="@string/TextButton5"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -194,7 +171,7 @@
                 android:id="@+id/geoL6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButton6"
+                android:text="@string/TextButton6"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -217,7 +194,7 @@
                 android:id="@+id/geoQ2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityGeographyTextButtonQuiz2"
+                android:text="@string/QuizButton"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -225,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="@string/activityGeographyTextboxQuiz2"
+                android:text="@string/QuizTextbox"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 

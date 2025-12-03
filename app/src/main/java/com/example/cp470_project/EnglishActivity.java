@@ -47,7 +47,6 @@ public class EnglishActivity extends AppCompatActivity {
         Button mL4 = findViewById(R.id.englishL4);
         Button mL5 = findViewById(R.id.englishL5);
         Button mL6 = findViewById(R.id.englishL6);
-        Button mQ1 = findViewById(R.id.englishQ1);
         Button mQ2 = findViewById(R.id.englishQ2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -102,14 +101,7 @@ public class EnglishActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        mQ1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i(ACTIVITY_NAME, "User clicked Quiz 1");
-                Intent intent = new Intent(EnglishActivity.this, QuizActivity.class);
-                startActivity(intent);
-            }
-        });
+
         mQ2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
