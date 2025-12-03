@@ -26,31 +26,50 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.jspecify.annotations.NonNull;
 
-public class LoginActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class SignupActivity extends AppCompatActivity {
+    private EditText loginName;
     private EditText loginEmail;
     private EditText passwordEditText;
-    private Button loginButton;
     private Button createAccountButton;
+    private Button backToLoginButton;
     private ProgressBar progressBar;
-    private static final String ACTIVITY_NAME ="LoginActivity";
+    private static final String ACTIVITY_NAME ="SignupActivity";
     private static final String PREFS_NAME = "cp470_prefs";
     private static final String KEY_DEFAULT_EMAIL = "DefaultEmail";
     private DatabaseReference mDatabase;
+
+    private void createNewUser(User user) {
+        String userId = mDatabase.child("users").push().getKey();
+
+        mDatabase.child("users").child(userId).setValue(user)
+            .addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(this, "Account created!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(this, SubjectActivity.class));
+                } else {
+                    Toast.makeText(this, "Failed to create account!", Toast.LENGTH_SHORT).show();
+                }
+            });
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        loginName = findViewById(R.id.loginName);
         loginEmail = findViewById(R.id.loginEmail);
         passwordEditText = findViewById(R.id.passwordEditText);
-        loginButton = findViewById(R.id.loginButton);
         createAccountButton = findViewById(R.id.createAccountButton);
+        backToLoginButton = findViewById(R.id.loginButton);
         progressBar = findViewById(R.id.progressBarLogin);
 
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
@@ -60,7 +79,8 @@ public class LoginActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         //save on click then go to main activity
-        loginButton.setOnClickListener(v-> {
+        createAccountButton.setOnClickListener(v-> {
+            String name = loginName.getText().toString();
             String currentEmail = loginEmail.getText().toString().trim();
             String password = passwordEditText.getText().toString();
 
@@ -73,52 +93,32 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
+            User user = new User(name, currentEmail, password, 0, 0, 0, 0, 0, 0 ,0 ,0);
+            progressBar.setVisibility(View.VISIBLE);
             DatabaseReference usersRef = mDatabase.child("users");
 
             usersRef.orderByChild("Email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     progressBar.setVisibility(View.GONE);
-                    loginButton.setEnabled(true);
 
-                    if (!snapshot.exists()) {
-                        Toast.makeText(LoginActivity.this, "Email not found.", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-
-                    for (DataSnapshot userSnapshot : snapshot.getChildren()) {
-                        String storedPassword = userSnapshot.child("Password").getValue(String.class);
-
-                        if (storedPassword != null && storedPassword.equals(password)) {
-                            // Login success
-                            Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-                            String userId = userSnapshot.getKey();
-
-                            Intent intent = new Intent(LoginActivity.this, SubjectActivity.class);
-                            intent.putExtra("userId", userId);
-                            startActivity(intent);
-                            finish();
-
-                        } else {
-                            // Wrong password
-                            Toast.makeText(LoginActivity.this, "Incorrect password.", Toast.LENGTH_SHORT).show();
-                        }
+                    if (snapshot.exists()) {
+                        Toast.makeText(SignupActivity.this, "That email already has an account! Please log in instead.", Toast.LENGTH_SHORT).show();
+                    } else {
+                        List<Integer> empty;
+                        createNewUser(new User(name, currentEmail, password, 0, 0, 0, 0, 0, 0 ,0 ,0));
                     }
                 }
 
                 @Override
-                public void onCancelled(@NonNull DatabaseError error) {
+                public void onCancelled(@androidx.annotation.NonNull DatabaseError error) {
                     progressBar.setVisibility(View.GONE);
-                    loginButton.setEnabled(true);
-                    Toast.makeText(LoginActivity.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
+                    Toast.makeText(SignupActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                }});
 
-            progressBar.setVisibility(View.VISIBLE);
-            loginButton.setEnabled(false);
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
                 progressBar.setVisibility(View.GONE);
-                loginButton.setEnabled(true);
+                createAccountButton.setEnabled(true);
             }, 3000);
 
             SharedPreferences.Editor editor = prefs.edit();
@@ -128,9 +128,8 @@ public class LoginActivity extends AppCompatActivity {
             Log.i(ACTIVITY_NAME, "Saved email to prefs: " + ok + "value:" +currentEmail);
         });
 
-        createAccountButton.setOnClickListener(v-> {
-            Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-            startActivity(intent);
+        backToLoginButton.setOnClickListener(v-> {
+            finish();
         });
 
     }
