@@ -106,7 +106,7 @@ public class GeographyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Quiz 2");
-                Intent intent = new Intent(GeographyActivity.this, QuizActivity.class);
+                Intent intent = new Intent(GeographyActivity.this, QuizActivityGeography.class);
                 startActivity(intent);
             }
         });

@@ -105,7 +105,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Quiz 2");
-                Intent intent = new Intent(ScienceActivity.this, QuizActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, QuizActivityScience.class);
                 startActivity(intent);
             }
         });

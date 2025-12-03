@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuizActivityGeography extends AppCompatActivity {
+public class QuizActivityScience extends AppCompatActivity {
 
     private RadioGroup radioGroupQ1, radioGroupQ2, radioGroupQ3, radioGroupQ4;
     private Button buttonSubmitQuiz;
@@ -46,7 +46,7 @@ public class QuizActivityGeography extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_geography);
+        setContentView(R.layout.activity_quiz_science);
         radioGroupQ1 = findViewById(R.id.radioGroupQ1);
         radioGroupQ2 = findViewById(R.id.radioGroupQ2);
         radioGroupQ3 = findViewById(R.id.radioGroupQ3);
@@ -62,38 +62,38 @@ public class QuizActivityGeography extends AppCompatActivity {
 
 
         questions.add(new Question(
-                "What is the capital city of Canada?",
-                new String[]{"Ontario", "Quebec", "Toronto", "Ottawa"},
+                "What state of matter is the least dense?",
+                new String[]{"Rock", "Solid", "Liquid", "Gas"},
                 3 // "4"
         ));
         questions.add(new Question(
-                "What province is the city of Edmonton in?",
-                new String[]{"Alberta", "British Columbia", "Prince Edward island", "Ottawa"},
+                "What state of matter is the most dense?",
+                new String[]{"Solid", "Gas", "Plasma", "Liquid"},
                 0
         ));
         questions.add(new Question(
-                "What province holds the capital?",
-                new String[]{"Ontario", "Toronto", "New Brunswick", "Yukon"},
+                "What planet is the closest to the Sun?",
+                new String[]{"Mercury", "Venus", "Earth", "Mars"},
                 0
         ));
         questions.add(new Question(
-                "What country lies directly south of Canada?",
-                new String[]{"Mexico", "Britain", "USA", "Canada"},
+                "What planet are we on??",
+                new String[]{"Canada", "Earth", "Venus", "Jupiter"},
+                1
+        ));
+        questions.add(new Question(
+                "What sense is the ear responsible for?",
+                new String[]{"Sound", "Taste", "Touch", "Feeling"},
+                0
+        ));
+        questions.add(new Question(
+                "What is the study of living things?",
+                new String[]{"Physics", "Math", "Biology", "Chemistry"},
                 2
         ));
         questions.add(new Question(
-                "What province speaks French?",
-                new String[]{"Ontario", "Saskatchewan", "Manitoba", "Quebec"},
-                3
-        ));
-        questions.add(new Question(
-                "What province has the city Montreal?",
-                new String[]{"New Brunswick", "Saskatoon", "Quebec", "Regina"},
-                2
-        ));
-        questions.add(new Question(
-                "What is the second largest Country by land mass?",
-                new String[]{"Canada", "Ontario", "Toronto", "Waterloo"},
+                "What is the largest?",
+                new String[]{"Earth", "Mars", "Jupiter", "Canada"},
                 2 // "4"
         ));
         java.util.Collections.shuffle(questions);

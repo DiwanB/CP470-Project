@@ -106,7 +106,7 @@ public class EnglishActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Quiz 2");
-                Intent intent = new Intent(EnglishActivity.this, QuizActivity.class);
+                Intent intent = new Intent(EnglishActivity.this, QuizActivityEnglish.class);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuizActivityGeography extends AppCompatActivity {
+public class QuizActivityEnglish extends AppCompatActivity {
 
     private RadioGroup radioGroupQ1, radioGroupQ2, radioGroupQ3, radioGroupQ4;
     private Button buttonSubmitQuiz;
@@ -46,7 +46,7 @@ public class QuizActivityGeography extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_geography);
+        setContentView(R.layout.activity_quiz_science);
         radioGroupQ1 = findViewById(R.id.radioGroupQ1);
         radioGroupQ2 = findViewById(R.id.radioGroupQ2);
         radioGroupQ3 = findViewById(R.id.radioGroupQ3);
@@ -62,39 +62,29 @@ public class QuizActivityGeography extends AppCompatActivity {
 
 
         questions.add(new Question(
-                "What is the capital city of Canada?",
-                new String[]{"Ontario", "Quebec", "Toronto", "Ottawa"},
+                "What is the punctuation to ask a question?",
+                new String[]{".", "!", ",", "?"},
                 3 // "4"
         ));
         questions.add(new Question(
-                "What province is the city of Edmonton in?",
-                new String[]{"Alberta", "British Columbia", "Prince Edward island", "Ottawa"},
+                "What is the punctuation to make a statement?",
+                new String[]{".", "!", "?", ";"},
                 0
         ));
         questions.add(new Question(
-                "What province holds the capital?",
-                new String[]{"Ontario", "Toronto", "New Brunswick", "Yukon"},
+                "What is the punctuation to exclaim?",
+                new String[]{"!", ".", "+", ":"},
                 0
         ));
         questions.add(new Question(
-                "What country lies directly south of Canada?",
-                new String[]{"Mexico", "Britain", "USA", "Canada"},
+                "What is the proper spelling?",
+                new String[]{"Dawg", "Dohg", "Drog", "Dog"},
                 2
         ));
         questions.add(new Question(
-                "What province speaks French?",
-                new String[]{"Ontario", "Saskatchewan", "Manitoba", "Quebec"},
+                "What word is spelt correctly?",
+                new String[]{"Helwo", "Hewwo", "Hali", "Hello"},
                 3
-        ));
-        questions.add(new Question(
-                "What province has the city Montreal?",
-                new String[]{"New Brunswick", "Saskatoon", "Quebec", "Regina"},
-                2
-        ));
-        questions.add(new Question(
-                "What is the second largest Country by land mass?",
-                new String[]{"Canada", "Ontario", "Toronto", "Waterloo"},
-                2 // "4"
         ));
         java.util.Collections.shuffle(questions);
         correctOptionIds = new int[totalQuestions];

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP470Project">
         <activity
+            android:name=".QuizActivityEnglish"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivityScience"
+            android:exported="false" />
+        <activity
             android:name=".QuizActivityGeography"
             android:exported="false" />
         <activity
