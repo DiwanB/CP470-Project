@@ -9,84 +9,59 @@
     <string name="activityLoginTextLoginButton">Login</string>
     <string name="activityLoginCreateAccountLoginButton">Create a new account…</string>
 
+    <string name="loginActivityTextEmailEmpty">Email cannot be empty</string>
+    <string name="loginActivityTextEmailInvalid">Enter a valid email address</string>
+    <string name="loginActivityTextPasswordEmpty">Password cannot be empty</string>
+
     <string name="activitySignupTextName">Name</string>
     <string name="activitySignupTextNameHint">Your name here!</string>
     <string name="activitySignupCreateAccountButton">Create your account!</string>
     <string name="activitySignupBackToLoginButton">Back to Login</string>
 
-    <string name="activityEnglishTextTitle">English</string>
-    <string name="activityEnglishTextButton1">Lesson 1</string>
+    <string name="QuizButton">Quiz</string>
+    <string name="QuizTextbox">Test your knowledge on the Lessons!</string>
+    <string name="TextButton1">Lesson 1</string>
+    <string name="TextButton2">Lesson 2</string>
+    <string name="TextButton3">Lesson 3</string>
+    <string name="TextButton4">Lesson 4</string>
+    <string name="TextButton5">Lesson 5</string>
+    <string name="TextButton6">Lesson 6</string>
+
+    <string name="English">English</string>
     <string name="activityEnglishTextbox1">L1 description</string>
-    <string name="activityEnglishTextButton2">Lesson 2</string>
     <string name="activityEnglishTextbox2">description for Lesson 2</string>
-    <string name="activityEnglishTextButton3">Lesson 3</string>
     <string name="activityEnglishTextbox3">Description for Lesson 3</string>
-    <string name="activityEnglishTextButtonQuiz1">Quiz 1</string>
-    <string name="activityEnglishTextboxQuiz1">Quiz 1 cover etc etc</string>
-    <string name="activityEnglishTextButton4">Lesson 4</string>
     <string name="activityEnglishTextbox4">l4 desc</string>
-    <string name="activityEnglishTextButton5">Lesson 5</string>
     <string name="activityEnglishTextbox5">l5 desc</string>
-    <string name="activityEnglishTextButton6">Lesson6</string>
     <string name="activityEnglishTextbox6">L6 description</string>
-    <string name="activityEnglishTextButtonQuiz2">Quiz 2</string>
-    <string name="activityEnglishTextboxQuiz2">Test your knowledge on Lessons 4-6</string>
-    <string name="activityGeographyTextTitle">Geography</string>
-    <string name="activityGeographyTextButton1">Lesson 1</string>
+    <string name="activityEnglishTextboxQuiz1">Quiz 1 cover etc etc</string>
+
+    <string name="Geography">Geography</string>
     <string name="activityGeographyTextbox1">Basic Equations</string>
-    <string name="activityGeographyTextButton2">Lesson 2</string>
     <string name="activityGeographyTextbox2">description for Lesson 2</string>
-    <string name="activityGeographyTextButton3">Lesson 3</string>
     <string name="activityGeographyTextbox3">Description for Lesson 3</string>
-    <string name="activityGeographyTextButtonQuiz1">Quiz 1</string>
-    <string name="activityGeographyTextboxQuiz1">Quiz 1 cover etc etc</string>
-    <string name="activityGeographyTextButton4">Lesson 4</string>
     <string name="activityGeographyTextbox4">l4 desc</string>
-    <string name="activityGeographyTextButton5">Lesson 5</string>
     <string name="activityGeographyTextbox5">l5 desc</string>
-    <string name="activityGeographyTextButton6">Lesson6</string>
     <string name="activityGeographyTextbox6">L6 description</string>
-    <string name="activityGeographyTextButtonQuiz2">Quiz 2</string>
-    <string name="activityGeographyTextboxQuiz2">Test your knowledge on Lessons 4-6</string>
-    <string name="activityLessonTextTitle">Lesson Title</string>
-    <string name="activityMathTextTitle">Math</string>
-    <string name="activityMathTextButton1">Lesson 1</string>
+
+    <string name="Math">Math</string>
     <string name="activityMathTextbox1">Basic Equations</string>
-    <string name="activityMathTextButton2">Lesson 2</string>
     <string name="activityMathTextbox2">description for Lesson 2</string>
-    <string name="activityMathTextButton3">Lesson 3</string>
     <string name="activityMathTextbox3">Description for Lesson 3</string>
-    <string name="activityMathTextButtonQuiz1">Quiz 1</string>
-    <string name="activityMathTextboxQuiz1">Quiz 1 cover etc etc</string>
-    <string name="activityMathTextButton4">Lesson 4</string>
     <string name="activityMathTextbox4">l4 desc</string>
-    <string name="activityMathTextButton5">Lesson 5</string>
     <string name="activityMathTextbox5">l5 desc</string>
-    <string name="activityMathTextButton6">Lesson 6</string>
     <string name="activityMathTextbox6">L6 description</string>
-    <string name="activityMathTextButtonQuiz2">Quiz 2</string>
-    <string name="activityMathTextboxQuiz2">Test your knowledge on Lessons 4-6</string>
-    <string name="activityScienceTextTitle">Science</string>
-    <string name="activityScienceTextButton1">Lesson 1</string>
+
+    <string name="Science">Science</string>
     <string name="activityScienceTextbox1">basic science</string>
-    <string name="activityScienceTextButton2">Lesson 2</string>
     <string name="activityScienceTextbox2">description for Lesson 2</string>
-    <string name="activityScienceTextButton3">Lesson 3</string>
     <string name="activityScienceTextbox3">Description for Lesson 3</string>
-    <string name="activityScienceTextButtonQuiz1">Quiz 1</string>
-    <string name="activityScienceTextboxQuiz1">Quiz 1 cover etc etc</string>
-    <string name="activityScienceTextButton4">Lesson 4</string>
     <string name="activityScienceTextbox4">l4 desc</string>
-    <string name="activityScienceTextButton5">Lesson 5</string>
     <string name="activityScienceTextbox5">l5 desc</string>
-    <string name="activityScienceTextButton6">Lesson6</string>
     <string name="activityScienceTextbox6">L6 description</string>
-    <string name="activityScienceTextButtonQuiz2">Quiz 2</string>
-    <string name="activityScienceTextboxQuiz2">Test your knowledge on Lessons 4-6</string>
-    <string name="activitySubjectTextMath">Math</string>
-    <string name="activitySubjectTextEnglish">English</string>
-    <string name="activitySubjectTextScience">Science</string>
-    <string name="activitySubjectTextGeography">Geography</string>
+
+    <string name="activityLessonTextTitle">Lesson Title</string>
+
     <string name="activityMathL1TextTitle">Lesson 1: Addition</string>
     <string name="activityMathL1Textbox1">Say you had 6 tiles that you put in a bag. You put 3 more tiles into that bag, and when you take them out to count, you see you have 9 tiles. This is an example of a basic addition equation: 6 + 3 = 9. We can do any addition problem in such a way, by envisioning putting tiles into a bag, adding more tiles to that bag, and then counting them. \n\n Another strategy we can use is the number line: say we needed to do 3 + 5. Find 3 on the number line and count 5 numbers to the right, you should find the sum to be 8.</string>
     <string name="activityMathL2TextTitle">Lesson 2: Subtraction</string>
@@ -99,9 +74,8 @@
     <string name="activityMathL5Textbox1"><![CDATA[BEDMAS is a way to learn the Order of Operations\n B E D M A S\n\nBrackets -> Exponents -> Division/Multiplication ->\nAddition/Subtraction (left to right).\n\nExample: 6 + 4 × 3 = 6 + 12 = 18\n(6 + 4) × 3 = 10 × 3 = 30]]></string>
     <string name="activityMathL6TextTitle">Lesson 6: Fractions</string>
     <string name="activityMathL6Textbox1">A fraction shows parts of a whole\n\nThe top number the NUMERATOR are the parts you \"have\".\n__________________________________\nWhereas the bottom number, the DENOMINATOR are the total parts needed to make a whole.\n\nExample: 1/2 is one of two equal parts.\n\nEquivalent fractions: 1/2 = 2/4 = 3/6.</string>
-    <string name="loginActivityTextEmailEmpty">Email cannot be empty</string>
-    <string name="loginActivityTextEmailInvalid">Enter a valid email address</string>
-    <string name="loginActivityTextPasswordEmpty">Password cannot be empty</string>
+
+
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

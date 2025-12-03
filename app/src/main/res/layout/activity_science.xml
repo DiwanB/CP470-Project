@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:text="@string/activityScienceTextTitle"
+            android:text="@string/Science"
             android:textStyle="bold"
             android:textSize="40sp" />
 
@@ -56,7 +56,7 @@
                 android:id="@+id/scienceL1"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton1"
+                android:text="@string/TextButton1"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -79,7 +79,7 @@
                 android:id="@+id/scienceL2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton2"
+                android:text="@string/TextButton2"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -102,7 +102,7 @@
                 android:id="@+id/scienceL3"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton3"
+                android:text="@string/TextButton3"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -114,28 +114,7 @@
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="12dp"
-            android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/scienceQ1"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButtonQuiz1"
-                app:cornerRadius="0dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginStart="16dp"
-                android:text="@string/activityScienceTextboxQuiz1"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -148,7 +127,7 @@
                 android:id="@+id/scienceL4"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton4"
+                android:text="@string/TextButton4"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -171,7 +150,7 @@
                 android:id="@+id/scienceL5"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton5"
+                android:text="@string/TextButton5"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -194,7 +173,7 @@
                 android:id="@+id/scienceL6"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButton6"
+                android:text="@string/TextButton6"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -217,7 +196,7 @@
                 android:id="@+id/scienceQ2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/activityScienceTextButtonQuiz2"
+                android:text="@string/QuizButton"
                 app:cornerRadius="0dp" />
 
             <TextView
@@ -225,7 +204,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:text="@string/activityScienceTextboxQuiz2"
+                android:text="@string/QuizTextbox"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 

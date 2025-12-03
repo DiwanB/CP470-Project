@@ -1,4 +1,4 @@
-package com.example.cp470_project;  // <-- change to match your actual package
+package com.example.cp470_project;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -65,15 +65,13 @@ public class QuizActivity extends AppCompatActivity {
         if (selectedQ4 == R.id.q4_option1) {
             score++;
         }
-
         //calculate percentage
         int percent = (int) ((score * 100.0f) / totalQuestions);
-
         //show result in a dialog
         new AlertDialog.Builder(this)
                 .setTitle("Quiz Results")
                 .setMessage("You got " + score + " out of " + totalQuestions +
-                        " correct (" + percent + "%).")
+                        " correct (" + percent + "%). ")
                 .setPositiveButton("OK", (dialog, which) -> {
                     //Later:could save this result to the database here
                     //and/or return to previous screen.
