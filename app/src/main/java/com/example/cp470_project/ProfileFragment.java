@@ -85,7 +85,7 @@ public class ProfileFragment extends Fragment {
                 if (geoScore == null) geoScore = 0.0;
                 if (geoAttempts == null) geoAttempts = 0;
 
-                String nameGreet = "Hey," + name + "!";
+                String nameGreet = "Hey, " + name + "!";
                 nameText.setText(nameGreet);
                 emailText.setText(email);
 
@@ -100,6 +100,7 @@ public class ProfileFragment extends Fragment {
 
                 String stats = "Total quizzes: " +(mathAttempts+englishAttempts+scienceAttempts+geoAttempts) + " | Avg score: " + totalAvg;
                 statsText.setText(stats);
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -111,7 +112,6 @@ public class ProfileFragment extends Fragment {
         //recycler view
         recyclerView = view.findViewById(R.id.recyclerViewResults);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
 
         adapter = new QuizResultsAdapter(results, new QuizResultsAdapter.OnResultClickListener() {
             @Override
