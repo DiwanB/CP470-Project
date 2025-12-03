@@ -53,8 +53,6 @@ public class LoginActivity extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
             loginButton.setEnabled(false);
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                Intent intent = new Intent(LoginActivity.this, SubjectActivity.class);
-                startActivity(intent);
                 progressBar.setVisibility(View.GONE);
                 loginButton.setEnabled(true);
             }, 3000);
