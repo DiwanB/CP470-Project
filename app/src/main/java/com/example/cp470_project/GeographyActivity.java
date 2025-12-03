@@ -53,7 +53,7 @@ public class GeographyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 1");
-                Intent intent = new Intent(GeographyActivity.this, MathL1Activity.class);
+                Intent intent = new Intent(GeographyActivity.this, GeographyL1Activity.class);
                 startActivity(intent);
             }
         });

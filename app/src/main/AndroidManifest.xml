@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP470Project">
         <activity
+            android:name=".EnglishL1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeographyL1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL1Activity"
+            android:exported="false" />
+        <activity
             android:name=".ToolbarActivity"
             android:exported="false"
             android:theme="@style/Theme.CP470Project" />
