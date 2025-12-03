@@ -7,6 +7,13 @@
     <string name="activityLoginTextHint">user@email.com</string>
     <string name="activityLoginTextPassword">Password</string>
     <string name="activityLoginTextLoginButton">Login</string>
+    <string name="activityLoginCreateAccountLoginButton">Create a new account…</string>
+
+    <string name="activitySignupTextName">Name</string>
+    <string name="activitySignupTextNameHint">Your name here!</string>
+    <string name="activitySignupCreateAccountButton">Create your account!</string>
+    <string name="activitySignupBackToLoginButton">Back to Login</string>
+
     <string name="activityEnglishTextTitle">English</string>
     <string name="activityEnglishTextButton1">Lesson 1</string>
     <string name="activityEnglishTextbox1">L1 description</string>

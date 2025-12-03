@@ -25,6 +25,22 @@
             android:textSize = "70sp"
             android:textStyle = "bold"
             android:fontFamily="sans-serif-condensed-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activitySignupTextName"
+            android:textSize = "20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activitySignupTextNameHint"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,19 +71,21 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/loginButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/activityLoginTextLoginButton"
-            android:textSize="20sp"
-            />
-
-        <Button
             android:id="@+id/createAccountButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/activityLoginCreateAccountLoginButton"
+            android:text="@string/activitySignupCreateAccountButton"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activitySignupBackToLoginButton"
+            android:textSize="20sp"
+            />
+
+
 
         <Space
             android:layout_width="0dp"

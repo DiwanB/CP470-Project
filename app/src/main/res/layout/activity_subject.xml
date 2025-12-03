@@ -17,111 +17,111 @@
         app:titleTextColor="@android:color/black"
         app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
 
-<GridLayout
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blizzardBlue"
-    android:rowCount = "2"
-    android:columnCount = "3"
-    tools:context=".SubjectActivity">
+    <GridLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blizzardBlue"
+        android:rowCount = "2"
+        android:columnCount = "3"
+        tools:context=".SubjectActivity">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/math_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60sp"
-
-
-        android:text="@string/activitySubjectTextMath"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed-medium"
-
-        app:icon="@drawable/math_icon"
-        app:iconTint="@null"
-        app:iconGravity="textTop"
-        app:iconSize="100dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/english_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60sp"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/math_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60sp"
 
 
-        android:text="@string/activitySubjectTextEnglish"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/activitySubjectTextMath"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
 
-        app:icon="@drawable/english_icon"
-        app:iconTint="@null"
-        app:iconGravity="textTop"
-        app:iconSize="100dp" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/science_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60sp"
+            app:icon="@drawable/math_icon"
+            app:iconTint="@null"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
 
-
-        android:text="@string/activitySubjectTextScience"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed-medium"
-
-        app:icon="@drawable/science_icon"
-        app:iconTint="@null"
-        app:iconGravity="textTop"
-        app:iconSize="100dp" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/geography_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_row="1"
-        android:layout_column="1"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="60sp"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/english_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60sp"
 
 
-        android:text="@string/activitySubjectTextGeography"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/activitySubjectTextEnglish"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
 
-        app:icon="@drawable/geography_icon"
-        app:iconTint="@null"
-        app:iconGravity="textTop"
-        app:iconSize="100dp" />
-</GridLayout>
-    </LinearLayout>
+            app:icon="@drawable/english_icon"
+            app:iconTint="@null"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/science_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60sp"
+
+
+            android:text="@string/activitySubjectTextScience"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            app:icon="@drawable/science_icon"
+            app:iconTint="@null"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/geography_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60sp"
+
+
+            android:text="@string/activitySubjectTextGeography"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            app:icon="@drawable/geography_icon"
+            app:iconTint="@null"
+            app:iconGravity="textTop"
+            app:iconSize="100dp" />
+    </GridLayout>
+</LinearLayout>
