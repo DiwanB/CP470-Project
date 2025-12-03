@@ -16,6 +16,20 @@
 
         <!--Login-->
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/learners" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  welcome back to"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,6 +39,16 @@
             android:textSize = "70sp"
             android:textStyle = "bold"
             android:fontFamily="sans-serif-condensed-medium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize = "25sp"
+            android:textAlignment="viewEnd"
+            android:text="the smarter learning app!  "
+            android:textStyle="italic"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,6 +85,15 @@
             android:text="@string/activityLoginTextLoginButton"
             android:textSize="20sp"
             />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/createAccountButton"
