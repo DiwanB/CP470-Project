@@ -5,11 +5,17 @@
     <item android:id="@+id/action_home"
         android:title="Home"
         android:icon="@drawable/home_icon"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_profile"
+        android:title="Home"
+        android:icon="@drawable/ic_person"
         android:orderInCategory="1"
         app:showAsAction="always" />
 
     <item android:id="@+id/action_about"
         android:title="@string/about"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         app:showAsAction="never" />
 </menu>
