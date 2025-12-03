@@ -226,20 +226,20 @@ public class QuizActivityGeography extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 long attempts = 0;
-                if (snapshot.hasChild("MathAttempts")) {
-                    Object atVal = snapshot.child("MathAttempts").getValue();
+                if (snapshot.hasChild("GeoAttempts")) {
+                    Object atVal = snapshot.child("GeoAttempts").getValue();
                     if (atVal instanceof Long) attempts = (Long) atVal;
                 }
 
                 double oldScore = 0;
-                if (snapshot.hasChild("MathScore")) {
-                    Object scVal = snapshot.child("MathScore").getValue();
+                if (snapshot.hasChild("GeoScore")) {
+                    Object scVal = snapshot.child("GeoScore").getValue();
                     if (scVal instanceof Long) oldScore = ((Long) scVal).doubleValue();
                     else if (scVal instanceof Double) oldScore = (Double) scVal;
                 }
 
-                userRef.child("MathAttempts").setValue(attempts + 1);
-                userRef.child("MathScore").setValue(oldScore + percent);
+                userRef.child("GeoAttempts").setValue(attempts + 1);
+                userRef.child("GeoScore").setValue(oldScore + percent);
             }
 
             @Override

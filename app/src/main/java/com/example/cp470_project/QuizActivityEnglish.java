@@ -216,20 +216,20 @@ public class QuizActivityEnglish extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 long attempts = 0;
-                if (snapshot.hasChild("MathAttempts")) {
-                    Object atVal = snapshot.child("MathAttempts").getValue();
+                if (snapshot.hasChild("EnglishAttempts")) {
+                    Object atVal = snapshot.child("EnglishAttempts").getValue();
                     if (atVal instanceof Long) attempts = (Long) atVal;
                 }
 
                 double oldScore = 0;
-                if (snapshot.hasChild("MathScore")) {
-                    Object scVal = snapshot.child("MathScore").getValue();
+                if (snapshot.hasChild("EnglishScore")) {
+                    Object scVal = snapshot.child("EnglishScore").getValue();
                     if (scVal instanceof Long) oldScore = ((Long) scVal).doubleValue();
                     else if (scVal instanceof Double) oldScore = (Double) scVal;
                 }
 
-                userRef.child("MathAttempts").setValue(attempts + 1);
-                userRef.child("MathScore").setValue(oldScore + percent);
+                userRef.child("EnglishAttempts").setValue(attempts + 1);
+                userRef.child("EnglishScore").setValue(oldScore + percent);
             }
 
             @Override

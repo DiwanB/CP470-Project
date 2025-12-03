@@ -95,10 +95,10 @@ public class ProfileFragment extends Fragment {
                 emailText.setText(email);
 
                 results.clear();
-                results.add(new QuizResult(1, "Math", mathAttempts == 0 ? 0 : mathScore / mathAttempts));
-                results.add(new QuizResult(2, "English", englishAttempts == 0 ? 0 : englishScore / englishAttempts));
-                results.add(new QuizResult(3, "Science", scienceAttempts == 0 ? 0 : scienceScore / scienceAttempts));
-                results.add(new QuizResult(4, "Geography", geoAttempts == 0 ? 0 : geoScore / geoAttempts));
+                results.add(new QuizResult(1, "Math", mathAttempts == 0 ? 0 : Math.round((mathScore / mathAttempts) * 100.0) / 100.0));
+                results.add(new QuizResult(2, "English", englishAttempts == 0 ? 0 : Math.round((englishScore / englishAttempts) * 100.0) / 100.0));
+                results.add(new QuizResult(3, "Science", scienceAttempts == 0 ? 0 : Math.round((scienceScore / scienceAttempts) * 100.0) / 100.0));
+                results.add(new QuizResult(4, "Geography", geoAttempts == 0 ? 0 : Math.round((geoScore / geoAttempts) * 100.0) / 100.0));
 
                 int totalAttempts = mathAttempts + englishAttempts + scienceAttempts + geoAttempts;
                 double totalAvg = (totalAttempts == 0) ? 0 : (mathScore + englishScore + scienceScore + geoScore) / totalAttempts;

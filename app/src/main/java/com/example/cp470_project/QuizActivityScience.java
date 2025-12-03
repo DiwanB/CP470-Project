@@ -226,20 +226,20 @@ public class QuizActivityScience extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 long attempts = 0;
-                if (snapshot.hasChild("MathAttempts")) {
-                    Object atVal = snapshot.child("MathAttempts").getValue();
+                if (snapshot.hasChild("ScienceAttempts")) {
+                    Object atVal = snapshot.child("ScienceAttempts").getValue();
                     if (atVal instanceof Long) attempts = (Long) atVal;
                 }
 
                 double oldScore = 0;
-                if (snapshot.hasChild("MathScore")) {
-                    Object scVal = snapshot.child("MathScore").getValue();
+                if (snapshot.hasChild("ScienceScore")) {
+                    Object scVal = snapshot.child("ScienceScore").getValue();
                     if (scVal instanceof Long) oldScore = ((Long) scVal).doubleValue();
                     else if (scVal instanceof Double) oldScore = (Double) scVal;
                 }
 
-                userRef.child("MathAttempts").setValue(attempts + 1);
-                userRef.child("MathScore").setValue(oldScore + percent);
+                userRef.child("ScienceAttempts").setValue(attempts + 1);
+                userRef.child("ScienceScore").setValue(oldScore + percent);
             }
 
             @Override
