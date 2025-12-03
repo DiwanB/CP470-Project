@@ -82,7 +82,7 @@ public class QuizActivity extends AppCompatActivity {
 
         DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("users").child(userId);
 
-        userRef.child("MathAttempts").addListenerForSingleValueEvent(new ValueEventListener() {
+        userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 long attempts = 0;
