@@ -36,6 +36,22 @@
     <string name="activityEnglishTextbox6">Paragraph Structure</string>
     <string name="activityEnglishTextboxQuiz1">Quiz 1 cover etc etc</string>
 
+    <string name="activityEnglishL1TextTitle">Lesson 1: Intro to English</string>
+    <string name="activityEnglishL1Textbox">English is a language we use to talk, read, and write. It has letters, words, and sentences that help us share ideas, ask questions, and tell stories!\nBeing one of the two official languages of Canada, we\'ll go through the basics in the following lessons.</string>
+    <string name="activityEnglishL2TextTitle">Lesson 2: Vocabulary Basics</string>
+    <string name="activityEnglishL2Textbox">Vocabulary is all the words you know. The more words you learn, the better you can understand and express yourself. Words can be for naming things, actions, feelings, or descriptions.</string>
+    <string name="activityEnglishL3TextTitle">Lesson 3: Simple Sentences</string>
+    <string name="activityEnglishL3Textbox">A sentence is a group of words that tells a complete idea. Simple sentences usually have a subject (who or what) and a verb (what they do). Example: \"The dog runs.\"</string>
+    <string name="activityEnglishL3Example">Example: \"The cat sleeps.\"\nExplanation: It has a subject (\"The cat\") and a verb (\"sleeps\") and tells a complete idea.</string>
+    <string name="activityEnglishL4TextTitle">Lesson 4: Nouns, Verbs, Adjectives</string>
+    <string name="activityEnglishL4Textbox">Nouns are people, places, or things (like \"cat\" or \"school\").\nVerbs are action or “doing” words (like “run” or “play”).\nAdjectives describe nouns, telling us more about them (like \"happy\" or \"blue\").</string>
+    <string name="activityEnglishL5TextTitle">Lesson 5: Reading Comprehension</string>
+    <string name="activityEnglishL5Textbox">This is about understanding what you read. It means knowing the main idea, remembering details, and figuring out what the story or text is really about.</string>
+    <string name="activityEnglishL5Example">Example passage: \"Tom has a red ball. He plays with it in the park every day.\"\nQuestions:\nWhat does Tom have? → A red ball\nWhere does he play? → In the park\nHow often does he play there? → Every day!</string>
+    <string name="activityEnglishL6TextTitle">Lesson 6: Paragraph Structure</string>
+    <string name="activityEnglishL6Textbox">A paragraph is a group of sentences that talk about the same idea. It usually starts with a topic sentence, has supporting sentences, and ends with a concluding sentence to wrap it up.</string>
+    <string name="activityEnglishL6Example">Example paragraph:\n\"Dogs are great pets. They are friendly and love to play. Many people enjoy taking their dogs for walks. Dogs can also help keep you safe at home.\" \nExplanation: \nTopic sentence: \"Dogs are great pets.\" \nSupporting sentences: \"They are friendly… Many people enjoy…\" \nConcluding sentence: \"Dogs can also help keep you safe at home.\"</string>
+
     <string name="Geography">Geography</string>
     <string name="activityGeographyTextbox1">Canadian Geography</string>
     <string name="activityGeographyTextbox2">Provinces and Territories</string>
@@ -51,9 +67,9 @@
     <string name="activityGeoL3TextTitle">Lesson 3: Canadian Physical Features</string>
     <string name="activityGeoL3Textbox">Key features like the Canadian Shield, rich in minerals, shaped early economic activity, while the Great Lakes-St. Lawrence River system became a vital trade and transportation corridor. The Rocky Mountains and vast forests influenced both Indigenous lifestyles and European exploration.</string>
     <string name="activityGeoL4TextTitle">Lesson 4: Climate Regions</string>
-    <string name="activityGeoL4Textbox">Canada’s climate ranges from Arctic in the north to temperate along the coasts and continental in the interior. These climatic conditions influenced settlement, agriculture, and migration patterns. For example, harsh northern climates slowed European settlement, while milder southern regions became population centers.</string>
+    <string name="activityGeoL4Textbox">Canada\'s climate ranges from Arctic in the north to temperate along the coasts and continental in the interior. These climatic conditions influenced settlement, agriculture, and migration patterns. For example, harsh northern climates slowed European settlement, while milder southern regions became population centers.</string>
     <string name="activityGeoL5TextTitle">Lesson 5: Human Geography</string>
-    <string name="activityGeoL5Textbox">Canada’s human geography reflects patterns of migration, settlement, and economic development. Indigenous peoples were the first inhabitants, followed by French and British settlers. Modern urban centers like Toronto, Vancouver, and Montreal grew near waterways, while the majority of Canadians live within 200 km of the U.S. border due to climate and trade opportunities.</string>
+    <string name="activityGeoL5Textbox">Canada\'s human geography reflects patterns of migration, settlement, and economic development. Indigenous peoples were the first inhabitants, followed by French and British settlers. Modern urban centers like Toronto, Vancouver, and Montreal grew near waterways, while the majority of Canadians live within 200 km of the U.S. border due to climate and trade opportunities.</string>
     <string name="activityGeoL6TextTitle">Lesson 6: Canadian Physical Features</string>
     <string name="activityGeoL6Textbox">Indigenous peoples, including First Nations and the Inuit, have inhabited Canada for thousands of years, developing complex societies, trade networks, and cultural practices. Colonization brought significant challenges, but Indigenous communities continue to preserve traditions, languages, and play an increasingly recognized role in governance and Canadian identity.</string>
 
@@ -72,6 +88,19 @@
     <string name="activityScienceTextbox4">States of Matter</string>
     <string name="activityScienceTextbox5">The Final Frontier: Space!</string>
     <string name="activityScienceTextbox6">Basic Machines</string>
+
+    <string name="activityScienceL1TextTitle">Lesson 1: What\'s Alive? What\'s Not?</string>
+    <string name="activityScienceL1Textbox">Living things share key characteristics such as growth, reproduction, response to stimuli, and energy use. Humans have studied life for centuries, from Aristotle’s early classifications of animals and plants to modern biology, which uses genetics and cellular theory to define life. Non-living things, like rocks or water, do not exhibit these traits.</string>
+    <string name="activityScienceL2TextTitle">Lesson 2: The Five Senses</string>
+    <string name="activityScienceL2Textbox">Humans experience the world through sight, hearing, taste, touch, and smell. Understanding the senses has evolved over time, from ancient philosophers speculating about perception to modern neuroscience revealing how the brain interprets sensory input to interact with the environment.</string>
+    <string name="activityScienceL3TextTitle">Lesson 3: Weather and Seasons</string>
+    <string name="activityScienceL3Textbox">Weather refers to short-term atmospheric conditions, while seasons reflect long-term patterns caused by the Earth’s tilt and orbit around the Sun. Historically, early humans used seasonal patterns for agriculture and survival, and today meteorology allows accurate forecasting to prepare for storms and climate changes.</string>
+    <string name="activityScienceL4TextTitle">Lesson 4: States of Matter</string>
+    <string name="activityScienceL4Textbox">Matter exists in different forms: solid, liquid, gas, and plasma. All depending on particle arrangement and energy. Early Greek philosophers like Democritus speculated about \"atoms,\" while modern science uses physics and chemistry to explain molecular behavior, phase changes, and applications like refrigeration or energy production.</string>
+    <string name="activityScienceL5TextTitle">Lesson 5: The Final Frontier - Space!</string>
+    <string name="activityScienceL5Textbox">Space, the vast expanse beyond Earth’s atmosphere, has fascinated humans for millennia.  From ancient astronomy and navigation to the Space Age, which began with satellites like Sputnik and culminated in moon landings, the International Space Station, and the exploration of the red planet Mars. Studying space helps us understand the universe, Earth’s environment, and potential human settlement beyond our planet.</string>
+    <string name="activityScienceL6TextTitle">Lesson 6: Basic Machines</string>
+    <string name="activityScienceL6Textbox">Simple machines like levers, pulleys, wheels, inclined planes, screws, and wedges—make work easier by multiplying force or changing direction. Humans have relied on these machines since ancient times, from the construction of pyramids to medieval water mills, and they remain foundational in engineering and technology today.</string>
 
     <string name="activityLessonTextTitle">Lesson Title</string>
 

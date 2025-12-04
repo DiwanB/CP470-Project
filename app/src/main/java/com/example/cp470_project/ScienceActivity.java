@@ -57,7 +57,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 1");
-                Intent intent = new Intent(ScienceActivity.this, MathL1Activity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL1Activity.class);
                 startActivity(intent);
             }
         });
@@ -65,7 +65,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 2");
-                Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL2Activity.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 3");
-                Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL3Activity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 4");
-                Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL4Activity.class);
                 startActivity(intent);
             }
         });
@@ -89,7 +89,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 5");
-                Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL5Activity.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +97,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Lesson 6");
-                Intent intent = new Intent(ScienceActivity.this, LessonActivity.class);
+                Intent intent = new Intent(ScienceActivity.this, ScienceL6Activity.class);
                 startActivity(intent);
             }
         });
