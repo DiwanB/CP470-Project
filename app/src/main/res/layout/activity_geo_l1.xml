@@ -69,9 +69,10 @@
         android:id="@+id/imageView3"
         android:layout_width="223dp"
         android:layout_height="253dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:srcCompat="@drawable/flag_of_canada__pantone_"
-        tools:layout_editor_absoluteX="94dp" />
+        app:srcCompat="@drawable/flag_of_canada__pantone_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
