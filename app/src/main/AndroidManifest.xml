@@ -31,10 +31,64 @@
             android:name=".GeographyActivity"
             android:exported="false" />
         <activity
+            android:name=".GeoL1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeoL2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeoL3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeoL4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeoL5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GeoL6Activity"
+            android:exported="false" />
+        <activity
             android:name=".ScienceActivity"
             android:exported="false" />
         <activity
+            android:name=".ScienceL1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceL6Activity"
+            android:exported="false" />
+        <activity
             android:name=".EnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishL6Activity"
             android:exported="false" />
         <activity
             android:name=".MathL1Activity"
