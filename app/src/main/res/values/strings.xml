@@ -44,6 +44,19 @@
     <string name="activityGeographyTextbox5">Human Geography</string>
     <string name="activityGeographyTextbox6">Indigenous Heritage</string>
 
+    <string name="activityGeoL1TextTitle">Lesson 1: Canadian Geography</string>
+    <string name="activityGeoL1Textbox">Canada stretches across six time zones and features a vast variety of landscapes, from the Arctic tundra to the Rocky Mountains and Great Lakes. Its geography has historically influenced settlement patterns, trade routes, and economic activities such as fur trading, farming, and resource extraction.</string>
+    <string name="activityGeoL2TextTitle">Lesson 2: Provinces and Territories</string>
+    <string name="activityGeoL2Textbox">Canada is made up of 10 provinces (Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan) and 3 territories (Northwest, Nunavut, and Yukon) with each having distinct histories. For example, Quebec was founded by French settlers in the 1600s, while British Columbia joined Canada during the gold rush era. Territories like Nunavut were established more recently to recognize Indigenous governance and land rights.</string>
+    <string name="activityGeoL3TextTitle">Lesson 3: Canadian Physical Features</string>
+    <string name="activityGeoL3Textbox">Key features like the Canadian Shield, rich in minerals, shaped early economic activity, while the Great Lakes-St. Lawrence River system became a vital trade and transportation corridor. The Rocky Mountains and vast forests influenced both Indigenous lifestyles and European exploration.</string>
+    <string name="activityGeoL4TextTitle">Lesson 4: Climate Regions</string>
+    <string name="activityGeoL4Textbox">Canada’s climate ranges from Arctic in the north to temperate along the coasts and continental in the interior. These climatic conditions influenced settlement, agriculture, and migration patterns. For example, harsh northern climates slowed European settlement, while milder southern regions became population centers.</string>
+    <string name="activityGeoL5TextTitle">Lesson 5: Human Geography</string>
+    <string name="activityGeoL5Textbox">Canada’s human geography reflects patterns of migration, settlement, and economic development. Indigenous peoples were the first inhabitants, followed by French and British settlers. Modern urban centers like Toronto, Vancouver, and Montreal grew near waterways, while the majority of Canadians live within 200 km of the U.S. border due to climate and trade opportunities.</string>
+    <string name="activityGeoL6TextTitle">Lesson 6: Canadian Physical Features</string>
+    <string name="activityGeoL6Textbox">Indigenous peoples, including First Nations and the Inuit, have inhabited Canada for thousands of years, developing complex societies, trade networks, and cultural practices. Colonization brought significant challenges, but Indigenous communities continue to preserve traditions, languages, and play an increasingly recognized role in governance and Canadian identity.</string>
+
     <string name="Math">Math</string>
     <string name="activityMathTextbox1">Addition</string>
     <string name="activityMathTextbox2">Subtraction</string>
