@@ -9,21 +9,22 @@
     tools:context=".MathL1Activity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Light"
         app:layout_constraintEnd_toEndOf="parent"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Light">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
             app:title=""
-            app:titleTextColor="@android:color/black"
-            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+            app:titleTextColor="@android:color/black" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
@@ -58,8 +59,10 @@
         android:id="@+id/imageView6"
         android:layout_width="325dp"
         android:layout_height="613dp"
-        app:srcCompat="@drawable/screenshot_2025_12_03_210859"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="28dp" />
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
+        app:srcCompat="@drawable/screenshot_2025_12_03_210859" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
